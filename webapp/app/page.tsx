@@ -28,7 +28,7 @@ export default function Home() {
         {/* Right side - Image */}
         <div className="flex-1 relative">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20From%202025-03-31%2018-21-40-UQFa7v8qjRj35v8PT3oxuZvsRlbyRN.png"
+            src="/images/Luteal/2019-06-06-00-50-32-197.jpg"
             alt="African children celebrating"
             fill
             className="object-cover"
