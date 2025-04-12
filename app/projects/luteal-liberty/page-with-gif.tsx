@@ -1,35 +1,6 @@
 import Image from "next/image"
 import { Heart, Book, Users, Star } from "lucide-react"
 
-const projectImages = [
-  {
-    src: "/placeholder.svg?height=300&width=400",
-    alt: "Luteal Liberty Workshop",
-    width: 400,
-    height: 300,
-    category: "event" as const,
-    title: "Menstrual Health Workshop",
-    date: "2024-02-15",
-  },
-  {
-    src: "/placeholder.svg?height=300&width=400",
-    alt: "Community Outreach",
-    width: 400,
-    height: 300,
-    category: "engagement" as const,
-    title: "School Outreach Program",
-    date: "2024-01-30",
-  },
-  {
-    src: "/placeholder.svg?height=300&width=400",
-    alt: "Project Achievement",
-    width: 400,
-    height: 300,
-    category: "achievement" as const,
-    title: "100 Schools Reached",
-    date: "2024-03-01",
-  },
-]
 
 export default function LutealLibertyPage() {
   return (
