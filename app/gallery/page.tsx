@@ -5,15 +5,15 @@ export default function GalleryPage() {
   // Featured carousel images - replace with your actual images
   const featuredImages = [
     {
-      src: "/placeholder.svg?height=600&width=1200",
+      src: "/carousel/WhatsApp Image 2024-12-05 at 00.11.14_9828787d.jpg",
       alt: "Africa Refined Featured Image 1",
     },
     {
-      src: "/placeholder.svg?height=600&width=1200",
+      src: "/carousel/WhatsApp Image 2024-12-13 at 07.38.41_e90d02ae.jpg",
       alt: "Africa Refined Featured Image 2",
     },
     {
-      src: "/placeholder.svg?height=600&width=1200",
+      src: "/carousel/WhatsApp Image 2024-12-17 at 12.05.01_3b9a8aab.jpg",
       alt: "Africa Refined Featured Image 3",
     },
     // Add your actual image when available
@@ -22,15 +22,15 @@ export default function GalleryPage() {
 
   // Gallery images - replace with your actual images
   const galleryImages = [
-    { src: "/placeholder.svg?height=400&width=600", alt: "Gallery Image 1" },
-    { src: "/placeholder.svg?height=400&width=600", alt: "Gallery Image 2" },
-    { src: "/placeholder.svg?height=400&width=600", alt: "Gallery Image 3" },
-    { src: "/placeholder.svg?height=400&width=600", alt: "Gallery Image 4" },
-    { src: "/placeholder.svg?height=400&width=600", alt: "Gallery Image 5" },
-    { src: "/placeholder.svg?height=400&width=600", alt: "Gallery Image 6" },
-    { src: "/placeholder.svg?height=400&width=600", alt: "Gallery Image 7" },
-    { src: "/placeholder.svg?height=400&width=600", alt: "Gallery Image 8" },
-    { src: "/placeholder.svg?height=400&width=600", alt: "Gallery Image 9" },
+    { src: "/carousel/2019-06-06-00-50-32-197.jpg", alt: "Gallery Image 1" },
+    { src: "/carousel/WhatsApp Image 2024-12-17 at 12.19.29_a349d8e0.jpg", alt: "Gallery Image 2" },
+    { src: "/carousel/WhatsApp Image 2024-12-17 at 05.54.11_889e6d00.jpg", alt: "Gallery Image 3" },
+    { src: "/carousel/2019-06-06-00-50-32-197.jpg", alt: "Gallery Image 4" },
+    { src: "/carousel/2019-06-06-00-50-32-197.jpg", alt: "Gallery Image 5" },
+    { src: "/carousel/2019-06-06-00-50-32-197.jpg", alt: "Gallery Image 6" },
+    { src: "/carousel/2019-06-06-00-50-32-197.jpg", alt: "Gallery Image 7" },
+    { src: "/carousel/2019-06-06-00-50-32-197.jpg", alt: "Gallery Image 8" },
+    { src: "/carousel/2019-06-06-00-50-32-197.jpg", alt: "Gallery Image 9" },
   ]
 
   return (
