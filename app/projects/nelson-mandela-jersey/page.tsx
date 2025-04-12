@@ -26,22 +26,22 @@ export default function NelsonMandelaJerseyPage() {
             </div>
 
             <p className="text-lg mb-6">
-              Established in 2024, the Nelson Mandela Jersey initiative focuses on making a positive impact and
+              {`Established in 2024, the Nelson Mandela Jersey initiative focuses on making a positive impact and
               continuing Mandela's legacy of service and compassion. This heartwarming project ties into the broader
-              Mandela Day initiative and aligns with the spirit of Nelson Mandela Day.
+              Mandela Day initiative and aligns with the spirit of Nelson Mandela Day.`}
             </p>
 
             <p className="text-lg mb-6">
-              Under the theme 'Keeping Warm this Mandela Month', this imitative occurs seasonally between June and July
+              {`Under the theme 'Keeping Warm this Mandela Month', this imitative occurs seasonally between June and July
               each year, which is winter in South Africa. This timing ensures that the jerseys are distributed when they
               are most needed to help people stay warm. The Nelson Mandela Jersey Project is one amongst many
               initiatives in South Africa that continue the long-living legacy and vision of Tata Nelson Rolihlahla
-              Mandela.
+              Mandela.`}
             </p>
 
             <blockquote className="border-l-4 border-blue-600 pl-4 italic my-8 text-lg bg-blue-50 p-6 rounded-r-lg">
-              "There can be no greater gift than that of giving one's time and energy to help others without expecting
-              anything in return." - Nelson Mandela
+              {`"There can be no greater gift than that of giving one's time and energy to help others without expecting
+              anything in return." - Nelson Mandela`}
             </blockquote>
 
             <h2 className="text-2xl font-bold mt-12 mb-6 text-blue-700">The key focus areas of the project include:</h2>
@@ -67,8 +67,8 @@ export default function NelsonMandelaJerseyPage() {
             <div className="bg-blue-50 p-8 rounded-lg my-12">
               <h2 className="text-2xl font-bold mb-4 text-blue-700">KEEPING WARM THIS MANDELA MONTH</h2>
               <p className="text-lg mb-4">
-                The 'Keeping Warm this Mandela Month' features a clothing collection of Madiba Inspired designs and
-                products, supporting the initiative. These can be purchased on the website.
+                {`The 'Keeping Warm this Mandela Month' features a clothing collection of Madiba Inspired designs and
+                products, supporting the initiative. These can be purchased on the website.`}
               </p>
               <div className="text-center mt-6">
                 <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white">

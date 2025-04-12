@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import { Heart, Book, Users, Star } from "lucide-react"
 import { useEffect, useRef } from "react"
 
 const projectImages = [

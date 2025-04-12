@@ -26,24 +26,24 @@ export default function MovingGardenPage() {
             </div>
 
             <p className="text-lg mb-6">
-              The Moving Garden project is a multifaceted initiative focusing on Sustainable Agriculture. This
+             {` The Moving Garden project is a multifaceted initiative focusing on Sustainable Agriculture. This
               initiative is the latest addition to Africa Refined that provides valuable educational opportunities for
               scholars and contributes to several Sustainable Development Goals (SDGs), particularly SDG 2, which aims
-              to end hunger, achieve food security and improved nutrition, and promote sustainable agriculture by 2030.
+              to end hunger, achieve food security and improved nutrition, and promote sustainable agriculture by 2030.`}
             </p>
 
             <div className="bg-green-50 p-8 rounded-lg my-8 border-l-4 border-green-600">
               <h2 className="text-2xl font-bold mb-4 text-green-700">Sustainable Development Goals</h2>
               <p className="text-lg mb-4">
-                The Moving Garden project contributes to several Sustainable Development Goals (SDGs), particularly:
+                {`The Moving Garden project contributes to several Sustainable Development Goals (SDGs), particularly:`}
               </p>
               <ul className="list-disc pl-6 text-lg space-y-2">
                 <li>
-                  <strong>SDG 2: Zero Hunger</strong> - Establishing community gardens that provide nutritious
-                  vegetables
+                  <strong>{`SDG 2: Zero Hunger`}</strong> {`- Establishing community gardens that provide nutritious
+                  vegetables`}
                 </li>
                 <li>
-                  <strong>SDG 3: Good Health and Well-being</strong> - Promoting consumption of home-grown vegetables
+                  <strong>{`SDG 3: Good Health and Well-being`}</strong> {`- Promoting consumption of home-grown vegetables`}
                 </li>
                 <li>
                   <strong>SDG 13: Climate Action</strong> - Encouraging sustainable agriculture practices
@@ -55,7 +55,7 @@ export default function MovingGardenPage() {
             </div>
 
             <h2 className="text-2xl font-bold mt-12 mb-6 text-green-700">
-              The key focus areas of the project include:
+              {`The key focus areas of the project include:`}
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <FocusArea

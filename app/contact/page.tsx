@@ -10,7 +10,7 @@ export default function ContactPage() {
       <section className="bg-amber-800 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">CONTACT US</h1>
-          <p className="text-xl max-w-3xl mx-auto">REFINING HEALTH, SUSTAINABILITY, AND EMPOWERMENT ACROSS AFRICA</p>
+          <p className="text-xl max-w-3xl mx-auto">{`REFINING HEALTH, SUSTAINABILITY, AND EMPOWERMENT ACROSS AFRICA`}</p>
         </div>
       </section>
 
@@ -20,8 +20,8 @@ export default function ContactPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
               <p className="text-lg mb-8">
-                We'd love to hear from you. Whether you have a question about our projects, donations, or anything else,
-                our team is ready to answer all your questions.
+                {`We'd love to hear from you. Whether you have a question about our projects, donations, or anything else,
+                our team is ready to answer all your questions.`}
               </p>
 
               <div className="space-y-4">
@@ -50,7 +50,7 @@ export default function ContactPage() {
               <CardHeader>
                 <CardTitle>Send us a Message</CardTitle>
                 <CardDescription>
-                  Fill out the form below and we'll get back to you as soon as possible.
+                  {`Fill out the form below and we'll get back to you as soon as possible.`}
                 </CardDescription>
               </CardHeader>
               <CardContent>
