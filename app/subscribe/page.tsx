@@ -20,8 +20,8 @@ export default function SubscribePage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Follow Our Journey</h2>
               <p className="text-lg mb-8">
-                Stay updated with our latest news, events, and initiatives by subscribing to our newsletter and
-                following us on social media. Join our community and be part of the change we're making across Africa.
+                {`Stay updated with our latest news, events, and initiatives by subscribing to our newsletter and
+                following us on social media. Join our community and be part of the change we're making across Africa.`}
               </p>
 
               <div className="space-y-8">

@@ -3,35 +3,6 @@
 import Image from "next/image"
 import { useEffect, useRef } from "react"
 
-const projectImages = [
-  {
-    src: "/images/Luteal/menstrual-calendar-concept_52683-46271.jpg",
-    alt: "Luteal Liberty Workshop",
-    width: 400,
-    height: 300,
-    category: "event" as const,
-    title: "Menstrual Health Workshops",
-    date: "2024-02-15",
-  },
-  {
-    src: "/images/Luteal/letual.webp",
-    alt: "Community Outreach",
-    width: 400,
-    height: 300,
-    category: "engagement" as const,
-    title: "School Outreach Program",
-    date: "2024-01-30",
-  },
-  {
-    src: "/images/Luteal/2019-06-06-00-50-32-197.jpg",
-    alt: "Project Achievement",
-    width: 400,
-    height: 300,
-    category: "achievement" as const,
-    title: "Schools Reached",
-    date: "2024-03-01",
-  },
-]
 
 // Video component with autoplay and loop
 const VideoPlayer = () => {

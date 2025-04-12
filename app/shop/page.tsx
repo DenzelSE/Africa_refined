@@ -18,9 +18,9 @@ export default function ShopPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">SHOP OUR COLLECTION</h2>
             <p className="text-lg">
-              By purchasing these products, you are contributing to the work and fundraiser of Africa Refined.
+             {` By purchasing these products, you are contributing to the work and fundraiser of Africa Refined.`}
               <br />
-              Seize the moment and join us in keeping the Madiba legacy alive.
+              {`Seize the moment and join us in keeping the Madiba legacy alive.`}
             </p>
           </div>
 
@@ -42,8 +42,8 @@ export default function ShopPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">KEEPING WARM THIS MANDELA MONTH</h2>
           <p className="text-lg max-w-3xl mx-auto mb-8">
-            The 'Keeping Warm this Mandela Month' features a clothing collection of Madiba Inspired designs and
-            products, supporting the initiative.
+            {`The 'Keeping Warm this Mandela Month' features a clothing collection of Madiba Inspired designs and
+            products, supporting the initiative.`}
           </p>
           <Button asChild size="lg" className="bg-amber-700 hover:bg-amber-800">
             <Link href="/shop">VIEW COLLECTION</Link>
