@@ -27,7 +27,7 @@ export default function Home() {
         {/* Right side - Image */}
         <div className="flex-1 relative">
           <Image
-            src="/images/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+            src="/public/carousel/2019-06-06-00-50-32-197.jpg"
             alt="African children celebrating"
             fill
             className="object-cover"
