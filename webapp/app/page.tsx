@@ -27,7 +27,7 @@ export default function Home() {
         {/* Right side - Image */}
         <div className="flex-1 relative">
           <Image
-            src="/carousel/2019-06-06-00-50-32-197.jpg"
+            src="/carousel/WhatsApp Image 2024-12-09 at 07.59.03_2a7f773f.jpg"
             alt="African children celebrating"
             fill
             className="object-cover"
@@ -39,57 +39,83 @@ export default function Home() {
       {/* Areas of Work */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12">AREAS OF WORK</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">AREAS OF WORK</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <ProjectCard
               title="Luteal Liberty Project"
               description="The Luteal Liberty Project, founded in 2019, aims to empower young girls through reproductive and menstrual health education whilst addressing the challenges young women experience as they transition through puberty, offering support and resources to help them manage their menstrual and reproductive health more effectively."
               link="/projects/luteal-liberty"
-              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-09 at 07.59.03_2a7f773f.jpg"
               color="pink"
             />
             <ProjectCard
               title="Nelson Mandela Jersey Project"
               description="Established in 2024, the Nelson Mandela Jersey initiative focuses on making a positive impact and continuing Mandela's legacy of service and compassion. This heartwarming project ties into the broader Mandela Day initiative and aligns with the spirit of Nelson Mandela Day."
               link="/projects/nelson-mandela-jersey"
-              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-09 at 07.59.03_2a7f773f.jpg"
               color="blue"
             />
             <ProjectCard
               title="Moving Garden Project"
               description="The Moving Garden project is a multifaceted initiative focusing on Sustainable Agriculture. This initiative is the latest addition to Africa Refined that provides valuable educational opportunities for scholars and contributes to several Sustainable Development Goals (SDGs), particularly SDG 2, which aims to end hunger, achieve food security and improved nutrition, and promote sustainable agriculture by 2030."
               link="/projects/moving-garden"
-              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-09 at 07.59.03_2a7f773f.jpg"
               color="green"
             />
           </div>
         </div>
       </section>
 
-      {/* Get Involved */}
       <section className="py-16 bg-amber-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">GET INVOLVED</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <GetInvolvedCard
-              title="View Collection"
-              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
-              buttonText="SHOP NOW"
-              buttonLink="/shop"
-            />
-            <GetInvolvedCard
-              title="Donate Now"
-              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
-              buttonText="DONATE NOW"
-              buttonLink="/donate"
-              primary
-            />
-            <GetInvolvedCard
-              title="Subscribe to our social media platforms"
-              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
-              buttonText="SUBSCRIBE NOW"
-              buttonLink="/subscribe"
-            />
+          <div className="grid md:grid-cols-3 gap-8 max-w-8xl h-[400px] mx-auto">
+            <div className="flex flex-col items-center text-center border-1 border-amber-200 rounded-lg transition-all duration-300 hover:shadow-xl hover:border-amber-400 overflow-hidden">
+              <div className="relative  w-full h-100">
+                <Image
+                  src="/carousel/WhatsApp Image 2024-12-17 at 11.50.04_04eb359b.jpg"
+                  alt="Shop Collection"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-xl font-semibold mb-6">View Collection</h3>
+                <div className="mt-auto">
+                  <Button asChild className="bg-amber-700 hover:bg-amber-800 w-full md:w-auto">
+                    <Link href="/shop">SHOP NOW</Link>
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center text-center border-2 border-amber-200 rounded-lg transition-all duration-300 hover:shadow-xl hover:border-amber-400 overflow-hidden">
+              <div className="relative w-full h-100">
+                <Image src="/carousel/WhatsApp Image 2024-12-17 at 11.50.04_04eb359b.jpg" alt="Donate" fill className="object-cover" />
+              </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-xl font-semibold mb-6">Donate Now</h3>
+                <div className="mt-auto">
+                  <Button asChild className="bg-amber-700 hover:bg-amber-800 w-full md:w-auto">
+                    <Link href="/donate">DONATE NOW</Link>
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center text-center border-2 border-amber-200 rounded-lg transition-all duration-300 hover:shadow-xl hover:border-amber-400 overflow-hidden">
+              <div className="relative w-full h-100">
+                <Image src="/carousel/WhatsApp Image 2024-12-17 at 11.50.04_04eb359b.jpg" alt="Subscribe" fill className="object-cover" />
+              </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-xl font-semibold mb-6">Subscribe to our social media platforms</h3>
+                <div className="mt-auto">
+                  <Button asChild className="bg-amber-700 hover:bg-amber-800 w-full md:w-auto">
+                    <Link href="/subscribe">SUBSCRIBE NOW</Link>
+                  </Button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -107,21 +133,21 @@ export default function Home() {
               title="Educational Workshop Success"
               date="April 10, 2025"
               excerpt="Our recent educational workshop on menstrual health reached over 200 young girls in local communities."
-              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-09 at 07.59.03_2a7f773f.jpg"
               link="/news/educational-workshop"
             />
             <NewsCard
               title="Mandela Month Preparations"
               date="March 25, 2025"
               excerpt="Preparations are underway for our annual Keeping Warm this Mandela Month initiative. Join us in making a difference."
-              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-09 at 07.59.03_2a7f773f.jpg"
               link="/news/mandela-month-preparations"
             />
             <NewsCard
               title="Moving Garden Expansion"
               date="March 15, 2025"
               excerpt="We're excited to announce the expansion of our Moving Garden project to three new schools in the region."
-              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-09 at 07.59.03_2a7f773f.jpg"
               link="/news/moving-garden-expansion"
             />
           </div>
@@ -198,50 +224,20 @@ function ProjectCard({
         <h3 className="text-xl font-bold text-white">{title}</h3>
       </div>
 
-      {/* Description overlay (visible on hover) */}
+      {/* Description overlay (visible on hover) - Changed to slide from bottom to top */}
       <div
-        className={`absolute inset-0 ${colorClasses.overlay} p-6 flex flex-col justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-70`}
+        className={`absolute inset-0 ${colorClasses.overlay} p-6 flex flex-col justify-center translate-y-full transition-transform duration-300 group-hover:translate-y-0 group-hover:opacity-70`}
       >
         <h3 className="text-xl font-bold text-white mb-4">{title}</h3>
         <p className="text-white mb-6 line-clamp-6">{description}</p>
         <div className="mt-auto">
-          <Button asChild variant="outline" className={colorClasses.button}>
+          <Button asChild variant="outline" className={`rounded-lg ${colorClasses.button}`}>
             <Link href={link} className="flex text-black items-center">
               LEARN MORE <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
         </div>
       </div>
-    </div>
-  )
-}
-
-function GetInvolvedCard({
-  title,
-  imageUrl,
-  buttonText,
-  buttonLink,
-  primary = false,
-}: {
-  title: string
-  imageUrl: string
-  buttonText: string
-  buttonLink: string
-  primary?: boolean
-}) {
-  return (
-    <div className="flex flex-col items-center text-center">
-      <div className="relative w-full h-48 mb-6 rounded-lg overflow-hidden">
-        <Image src={imageUrl || "/placeholder.svg"} alt={title} fill className="object-cover" />
-      </div>
-      <h3 className="text-xl font-semibold mb-6">{title}</h3>
-      <Button
-        asChild
-        variant={primary ? "default" : "outline"}
-        className={primary ? "bg-amber-700 hover:bg-amber-800" : ""}
-      >
-        <Link href={buttonLink}>{buttonText}</Link>
-      </Button>
     </div>
   )
 }
@@ -270,7 +266,7 @@ function NewsCard({
         <p className="text-gray-600 mb-4 flex-grow">{excerpt}</p>
         <Button asChild variant="link" className="text-amber-800 p-0 justify-start">
           <Link href={link} className="flex items-center">
-            READ MORE <ArrowRight className="ml-2 h-4 w-4" />
+            READ MORE <ArrowRight className="ml-2 h-4 w-4"/>
           </Link>
         </Button>
       </div>
