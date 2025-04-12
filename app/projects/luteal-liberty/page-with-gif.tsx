@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { Heart, Book, Users, Star } from "lucide-react"
-import ImageGallery from "../../components/ImageGallery"
 
 const projectImages = [
   {
@@ -169,14 +168,6 @@ export default function LutealLibertyPage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Gallery Section */}
-      <section className="py-16 bg-pink-50">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-8 text-center text-pink-600">Our Impact in Pictures</h2>
-          <ImageGallery images={projectImages} />
         </div>
       </section>
     </div>
