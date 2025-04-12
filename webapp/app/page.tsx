@@ -10,7 +10,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative flex flex-col md:flex-row h-[80vh]">
         {/* Left side - Text and CTA */}
-        <div className="flex-1 flex items-center justify-center bg-[url('/placeholder.svg?height=800&width=800')] bg-amber-700 bg-blend-multiply bg-cover">
+        <div className="flex-1 flex items-center justify-center bg-[url('/carousel/bgpatterbs.jpg')] bg-amber-300 bg-blend-multiply bg-cover">
           <div className="px-8 py-12 md:py-0 max-w-xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">Be part of the vision.</h1>
             <p className="text-xl md:text-2xl mb-8 text-white">Help us refine Africa, one initiative at a time.</p>
@@ -71,7 +71,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12">GET INVOLVED</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-8xl h-[400px] mx-auto">
             <div className="flex flex-col items-center text-center border-1 border-amber-200 rounded-lg transition-all duration-300 hover:shadow-xl hover:border-amber-400 overflow-hidden">
-              <div className="relative  w-full h-100">
+              <div className="relative overflow-hidden  w-full h-100">
                 <Image
                   src="/carousel/WhatsApp Image 2024-12-17 at 11.50.04_04eb359b.jpg"
                   alt="Shop Collection"
