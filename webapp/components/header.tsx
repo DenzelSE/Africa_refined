@@ -19,42 +19,46 @@ export default function Header() {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
-          <Link href="/" className="flex items-center">
-            <div className="flex items-center">
-              <div className="relative h-12 w-12 mr-3">
+          <div className="flex items-center">
+            {/* Logo */}
+            <Link href="/" className="flex items-center mr-8">
+              <div className="relative h-18 w-18">
                 <Image
-                  src="/carousel/Untitled design(3)-Photoroom.png"
+                  src="/carousel/Untitled design(4)-Photoroom.png"
                   alt="Africa Refined Logo"
                   fill
                   className="object-contain"
                 />
               </div>
-              <div className="text-2xl font-bold text-amber-800 flex items-center">
-                <span className="mr-2">AFRICA</span>
-                <span className="text-amber-600">REFINED</span>
-              </div>
-            </div>
-          </Link>
+            </Link>
+
+            {/* Desktop Navigation - moved next to logo */}
+            <nav className="hidden md:flex items-center space-x-6">
+              <NavLink href="/">HOME</NavLink>
+              <NavLink href="/about">ABOUT</NavLink>
+              <NavLink href="/team">MEET THE TEAM</NavLink>
+              <NavLink href="/projects">OUR PROJECTS</NavLink>
+              <NavLink href="/shop">SHOP</NavLink>
+              <NavLink href="/gallery">GALLERY</NavLink>
+              <NavLink href="/news">NEWS</NavLink>
+              <NavLink href="/contact">CONTACT US</NavLink>
+            </nav>
+          </div>
 
           {/* Mobile menu button */}
-          <button className="md:hidden" onClick={toggleMenu}>
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
-            <NavLink href="/">HOME</NavLink>
-            <NavLink href="/about">ABOUT</NavLink>
-            <NavLink href="/team">MEET THE TEAM</NavLink>
-            <NavLink href="/projects">OUR PROJECTS</NavLink>
-            <NavLink href="/shop">SHOP</NavLink>
-            <NavLink href="/gallery">GALLERY</NavLink>
-            <NavLink href="/news">NEWS</NavLink>
-            <NavLink href="/contact">CONTACT US</NavLink>
-            <Button asChild className="bg-amber-700 hover:bg-amber-800">
+          <div className="flex items-center">
+            <Button
+              asChild
+              variant="outline"
+              className="mr-4 border-amber-700 text-amber-700 hover:bg-amber-50 hidden md:inline-flex"
+            >
               <Link href="/donate">DONATE TODAY</Link>
             </Button>
-          </nav>
+
+            <button className="md:hidden" onClick={toggleMenu}>
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -85,7 +89,7 @@ export default function Header() {
               <MobileNavLink href="/contact" onClick={toggleMenu}>
                 CONTACT US
               </MobileNavLink>
-              <Button asChild className="bg-amber-700 hover:bg-amber-800 w-full">
+              <Button asChild variant="outline" className="border-amber-700 text-amber-700 hover:bg-amber-50 w-full">
                 <Link href="/donate" onClick={toggleMenu}>
                   DONATE TODAY
                 </Link>
@@ -97,7 +101,6 @@ export default function Header() {
     </header>
   )
 }
-
 
 function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
@@ -118,4 +121,3 @@ function MobileNavLink({ href, onClick, children }: { href: string; onClick: () 
     </Link>
   )
 }
-
