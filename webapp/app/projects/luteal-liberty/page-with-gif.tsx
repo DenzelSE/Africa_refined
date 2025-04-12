@@ -1,21 +1,19 @@
-"use client"
-
 import Image from "next/image"
 import { Heart, Book, Users, Star } from "lucide-react"
-import { useEffect, useRef } from "react"
+import ImageGallery from "../../components/ImageGallery"
 
 const projectImages = [
   {
-    src: "/images/Luteal/menstrual-calendar-concept_52683-46271.jpg",
+    src: "/placeholder.svg?height=300&width=400",
     alt: "Luteal Liberty Workshop",
     width: 400,
     height: 300,
     category: "event" as const,
-    title: "Menstrual Health Workshops",
+    title: "Menstrual Health Workshop",
     date: "2024-02-15",
   },
   {
-    src: "/images/Luteal/letual.webp",
+    src: "/placeholder.svg?height=300&width=400",
     alt: "Community Outreach",
     width: 400,
     height: 300,
@@ -24,38 +22,15 @@ const projectImages = [
     date: "2024-01-30",
   },
   {
-    src: "/images/Luteal/2019-06-06-00-50-32-197.jpg",
+    src: "/placeholder.svg?height=300&width=400",
     alt: "Project Achievement",
     width: 400,
     height: 300,
     category: "achievement" as const,
-    title: "Schools Reached",
+    title: "100 Schools Reached",
     date: "2024-03-01",
   },
 ]
-
-// Video component with autoplay and loop
-const VideoPlayer = () => {
-  const videoRef = useRef<HTMLVideoElement>(null)
-
-  useEffect(() => {
-    // Ensure video plays when component mounts
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 2.0
-      videoRef.current.play().catch((error) => {
-        console.error("Error playing video:", error)
-      })
-    }
-  }, [])
-
-  return (
-    <video ref={videoRef} className="w-full h-full object-cover rounded-2xl" autoPlay muted loop  playsInline>
-     
-      <source src="/carousel/WhatsApp Video 2024-12-09 at 08.07.29_419d0be2.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  )
-}
 
 export default function LutealLibertyPage() {
   return (
@@ -64,7 +39,7 @@ export default function LutealLibertyPage() {
       <div className="relative min-h-[500px] overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src=""
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20From%202025-03-03%2020-19-27-ebHrLR6nlMrnKzIDEjPheO2SAjHMMQ.png"
             alt="Luteal Liberty Banner"
             layout="fill"
             objectFit="cover"
@@ -72,8 +47,7 @@ export default function LutealLibertyPage() {
           />
         </div>
         <div className="relative container mx-auto px-6 pt-32 pb-20">
-          <div className="py-8"></div>
-          <h1 className="text-5xl font-bold text-pink-400 mb-6">Luteal Liberty Project</h1>
+          <h1 className="text-5xl font-bold text-white mb-6">Luteal Liberty Project</h1>
           <p className="text-xl text-white/90 max-w-2xl">
             {`Empowering young girls through reproductive and menstrual health education while addressing the challenges
             they face during their transition through puberty.`}
@@ -81,8 +55,8 @@ export default function LutealLibertyPage() {
         </div>
       </div>
 
-    
-      {/* <section className="py-16 bg-pink-200">
+      {/* Stats Section */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="bg-pink-50 rounded-xl p-6 text-center">
@@ -96,7 +70,7 @@ export default function LutealLibertyPage() {
               <div className="flex justify-center mb-4">
                 <Users className="w-10 h-10 text-pink-500" />
               </div>
-              <h3 className="text-2xl font-bold text-pink-600">{`5,000+`}</h3>
+              <h3 className="text-2xl font-bold text-pink-600">{`5,000+<`}</h3>
               <p className="text-gray-600">Girls Supported</p>
             </div>
             <div className="bg-pink-50 rounded-xl p-6 text-center">
@@ -115,10 +89,10 @@ export default function LutealLibertyPage() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
-      {/* About Section with Video */}
-      <section className="py-16 bg-pink-200">
+      {/* About Section with GIF */}
+      <section className="py-16">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -135,7 +109,7 @@ export default function LutealLibertyPage() {
                 independently make informed decisions about one's health.`}
               </p>
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-pink-600">Key Focus Areas:</h3>
+                <h3 className="text-xl font-semibold text-pink-600">{`Key Focus Areas:`}</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
@@ -147,7 +121,7 @@ export default function LutealLibertyPage() {
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
-                    <span>Self-care and Mental Health Support</span>
+                    <span>{`Self-care and Mental Health Support`}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
@@ -158,33 +132,26 @@ export default function LutealLibertyPage() {
             </div>
             <div className="relative">
               <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
-                <VideoPlayer />
+                <Image
+                  src="/images/luteal-liberty.gif"
+                  alt="Luteal Liberty Project in action"
+                  layout="fill"
+                  objectFit="cover"
+                  unoptimized={true} // Important for GIFs to maintain animation
+                />
               </div>
 
               {/* Right side dots */}
-              <div className="absolute -bottom-8 -right-8">
+              <div className="absolute top-0 -right-8 h-full">
                 <div className="flex flex-col gap-2 h-full justify-between">
-                  {Array.from({ length: 10 }).map((_, i) => (
-                    <div key={`right-${i}`} className="w-2 h-2 rounded-full bg-pink-500" />
-                  ))}
-                </div>
-              </div>
-              {/* Right side dots */}
-              <div className="absolute -bottom-8 -right-4">
-                <div className="flex flex-col gap-2 h-full justify-between">
-                  {Array.from({ length: 10 }).map((_, i) => (
-                    <div key={`right-${i}`} className="w-2 h-2 rounded-full bg-pink-500" />
-                  ))}
-                </div>
-              </div>
-              <div className="absolute -bottom-8 -right-8">
-                <div className="flex gap-2 w-full justify-between">
                   {Array.from({ length: 20 }).map((_, i) => (
-                    <div key={`bottom-${i}`} className="w-2 h-2 rounded-full bg-pink-500" />
+                    <div key={`right-${i}`} className="w-2 h-2 rounded-full bg-pink-500" />
                   ))}
                 </div>
               </div>
-              <div className="absolute -bottom-4 -right-8">
+
+              {/* Bottom side dots */}
+              <div className="absolute -bottom-8 left-0 w-full">
                 <div className="flex gap-2 w-full justify-between">
                   {Array.from({ length: 20 }).map((_, i) => (
                     <div key={`bottom-${i}`} className="w-2 h-2 rounded-full bg-pink-500" />
@@ -206,12 +173,12 @@ export default function LutealLibertyPage() {
       </section>
 
       {/* Gallery Section */}
-      {/* <section className="py-16 bg-pink-200">
+      <section className="py-16 bg-pink-50">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-8 text-center text-pink-600">Our Impact in Pictures</h2>
           <ImageGallery images={projectImages} />
         </div>
-      </section> */}
+      </section>
     </div>
   )
 }
