@@ -27,7 +27,7 @@ export default function Home() {
         {/* Right side - Image */}
         <div className="flex-1 relative">
           <Image
-            src="/public/carousel/2019-06-06-00-50-32-197.jpg"
+            src="/carousel/2019-06-06-00-50-32-197.jpg"
             alt="African children celebrating"
             fill
             className="object-cover"
@@ -39,25 +39,28 @@ export default function Home() {
       {/* Areas of Work */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">AREAS OF WORK</h2>
+          <h2 className="text-4xl font-bold text-center mb-12">AREAS OF WORK</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <ProjectCard
               title="Luteal Liberty Project"
               description="The Luteal Liberty Project, founded in 2019, aims to empower young girls through reproductive and menstrual health education whilst addressing the challenges young women experience as they transition through puberty, offering support and resources to help them manage their menstrual and reproductive health more effectively."
               link="/projects/luteal-liberty"
-              imageUrl="/images/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+              color="pink"
             />
             <ProjectCard
               title="Nelson Mandela Jersey Project"
               description="Established in 2024, the Nelson Mandela Jersey initiative focuses on making a positive impact and continuing Mandela's legacy of service and compassion. This heartwarming project ties into the broader Mandela Day initiative and aligns with the spirit of Nelson Mandela Day."
               link="/projects/nelson-mandela-jersey"
-              imageUrl="/images/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+              color="blue"
             />
             <ProjectCard
               title="Moving Garden Project"
               description="The Moving Garden project is a multifaceted initiative focusing on Sustainable Agriculture. This initiative is the latest addition to Africa Refined that provides valuable educational opportunities for scholars and contributes to several Sustainable Development Goals (SDGs), particularly SDG 2, which aims to end hunger, achieve food security and improved nutrition, and promote sustainable agriculture by 2030."
               link="/projects/moving-garden"
-              imageUrl="/images/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+              color="green"
             />
           </div>
         </div>
@@ -70,20 +73,20 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <GetInvolvedCard
               title="View Collection"
-              imageUrl="/images/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
               buttonText="SHOP NOW"
               buttonLink="/shop"
             />
             <GetInvolvedCard
               title="Donate Now"
-              imageUrl="/images/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
               buttonText="DONATE NOW"
               buttonLink="/donate"
               primary
             />
             <GetInvolvedCard
               title="Subscribe to our social media platforms"
-              imageUrl="/images/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
               buttonText="SUBSCRIBE NOW"
               buttonLink="/subscribe"
             />
@@ -104,21 +107,21 @@ export default function Home() {
               title="Educational Workshop Success"
               date="April 10, 2025"
               excerpt="Our recent educational workshop on menstrual health reached over 200 young girls in local communities."
-              imageUrl="/images/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
               link="/news/educational-workshop"
             />
             <NewsCard
               title="Mandela Month Preparations"
               date="March 25, 2025"
               excerpt="Preparations are underway for our annual Keeping Warm this Mandela Month initiative. Join us in making a difference."
-              imageUrl="/Images/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
               link="/news/mandela-month-preparations"
             />
             <NewsCard
               title="Moving Garden Expansion"
               date="March 15, 2025"
               excerpt="We're excited to announce the expansion of our Moving Garden project to three new schools in the region."
-              imageUrl="/images/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
               link="/news/moving-garden-expansion"
             />
           </div>
@@ -141,12 +144,46 @@ function ProjectCard({
   description,
   link,
   imageUrl,
+  color = "amber",
 }: {
   title: string
   description: string
   link: string
   imageUrl: string
+  color?: "pink" | "blue" | "green" | "amber"
 }) {
+  // Define color classes based on the color prop
+  const getColorClasses = () => {
+    switch (color) {
+      case "pink":
+        return {
+          title: "bg-pink-500 bg-opacity-90",
+          overlay: "bg-pink-500 bg-opacity-50",
+          button: "border-white text-white hover:bg-pink-600",
+        }
+      case "blue":
+        return {
+          title: "bg-blue-600 bg-opacity-90",
+          overlay: "bg-blue-600 bg-opacity-80",
+          button: "border-white text-white hover:bg-blue-700",
+        }
+      case "green":
+        return {
+          title: "bg-green-600 bg-opacity-90",
+          overlay: "bg-green-600 bg-opacity-80",
+          button: "border-white text-white hover:bg-green-700",
+        }
+      default:
+        return {
+          title: "bg-amber-800 bg-opacity-90",
+          overlay: "bg-amber-800 bg-opacity-90",
+          button: "border-white text-white hover:bg-amber-700",
+        }
+    }
+  }
+
+  const colorClasses = getColorClasses()
+
   return (
     <div className="group relative overflow-hidden rounded-lg shadow-md h-[400px]">
       {/* Image */}
@@ -155,17 +192,21 @@ function ProjectCard({
       </div>
 
       {/* Title overlay (always visible) */}
-      <div className="absolute bottom-0 left-0 right-0 bg-amber-800 bg-opacity-90 p-4 transition-all duration-300 group-hover:translate-y-full">
+      <div
+        className={`absolute bottom-0 left-0 right-0 ${colorClasses.title} p-4 transition-all duration-300 group-hover:translate-y-full`}
+      >
         <h3 className="text-xl font-bold text-white">{title}</h3>
       </div>
 
       {/* Description overlay (visible on hover) */}
-      <div className="absolute inset-0 bg-amber-800 bg-opacity-90 p-6 flex flex-col justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+      <div
+        className={`absolute inset-0 ${colorClasses.overlay} p-6 flex flex-col justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-70`}
+      >
         <h3 className="text-xl font-bold text-white mb-4">{title}</h3>
         <p className="text-white mb-6 line-clamp-6">{description}</p>
         <div className="mt-auto">
-          <Button asChild variant="outline" className="border-white text-white hover:bg-amber-700">
-            <Link href={link} className="flex items-center">
+          <Button asChild variant="outline" className={colorClasses.button}>
+            <Link href={link} className="flex text-black items-center">
               LEARN MORE <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
