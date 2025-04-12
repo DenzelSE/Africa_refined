@@ -171,7 +171,7 @@ SidebarMenuBadge.displayName = "SidebarMenuBadge"
 
 const SidebarRail = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
   ({ className, ...props }, ref) => {
-    const { isOpen, setIsOpen } = useSidebar()
+    const { setIsOpen } = useSidebar()
 
     return (
       <div
