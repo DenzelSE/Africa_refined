@@ -6,6 +6,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -19,9 +20,19 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex items-center">
-            <div className="text-2xl font-bold text-amber-800 flex items-center">
-              <span className="mr-2">AFRICA</span>
-              <span className="text-amber-600">REFINED</span>
+            <div className="flex items-center">
+              <div className="relative h-12 w-12 mr-3">
+                <Image
+                  src="/carousel/Untitled design(3)-Photoroom.png"
+                  alt="Africa Refined Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="text-2xl font-bold text-amber-800 flex items-center">
+                <span className="mr-2">AFRICA</span>
+                <span className="text-amber-600">REFINED</span>
+              </div>
             </div>
           </Link>
 
@@ -37,7 +48,8 @@ export default function Header() {
             <NavLink href="/team">MEET THE TEAM</NavLink>
             <NavLink href="/projects">OUR PROJECTS</NavLink>
             <NavLink href="/shop">SHOP</NavLink>
-            <NavLink href="/media">MEDIA & NEWS</NavLink>
+            <NavLink href="/gallery">GALLERY</NavLink>
+            <NavLink href="/news">NEWS</NavLink>
             <NavLink href="/contact">CONTACT US</NavLink>
             <Button asChild className="bg-amber-700 hover:bg-amber-800">
               <Link href="/donate">DONATE TODAY</Link>
@@ -64,8 +76,11 @@ export default function Header() {
               <MobileNavLink href="/shop" onClick={toggleMenu}>
                 SHOP
               </MobileNavLink>
-              <MobileNavLink href="/media" onClick={toggleMenu}>
-                MEDIA & NEWS
+              <MobileNavLink href="/gallery" onClick={toggleMenu}>
+                GALLERY
+              </MobileNavLink>
+              <MobileNavLink href="/news" onClick={toggleMenu}>
+                NEWS
               </MobileNavLink>
               <MobileNavLink href="/contact" onClick={toggleMenu}>
                 CONTACT US
@@ -82,6 +97,7 @@ export default function Header() {
     </header>
   )
 }
+
 
 function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
