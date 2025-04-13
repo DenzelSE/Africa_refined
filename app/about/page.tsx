@@ -1,3 +1,4 @@
+import MeetTheTeam from "@/components/MeetTheTeam"
 import Image from "next/image"
 
 export default function AboutPage() {
@@ -166,6 +167,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section> */}
+      <MeetTheTeam/>
     </div>
   )
 }

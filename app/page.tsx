@@ -3,6 +3,7 @@ import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
+import MeetTheTeam from "@/components/MeetTheTeam"
 
 export default function Home() {
   return (
@@ -161,6 +162,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <MeetTheTeam/>
     </div>
   )
 }

@@ -1,5 +1,7 @@
 "use client"
 
+import { Button } from "@/components/ui/button"
+import { ArrowRight, Award, Book, Calendar, Heart, Link, Star, Users } from "lucide-react"
 import Image from "next/image"
 import { useEffect, useRef } from "react"
 
@@ -31,10 +33,10 @@ export default function LutealLibertyPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white">
       {/* Hero Section with Curved Design */}
-      <div className="relative min-h-[500px] overflow-hidden">
-        <div className="absolute inset-0">
+      <div className="relative min-h-[500px] overflow-hidden bg-gradient-to-b from-pink-400 to-pink-800">
+        <div className="absolute inset-0 opacity-50">
           <Image
-            src=""
+            src="/carousel/WhatsApp Image 2024-12-09 at 07.59.03_2a7f773f.jpg"
             alt="Luteal Liberty Banner"
             layout="fill"
             objectFit="cover"
@@ -43,49 +45,13 @@ export default function LutealLibertyPage() {
         </div>
         <div className="relative container mx-auto px-6 pt-32 pb-20">
           <div className="py-8"></div>
-          <h1 className="text-5xl font-bold text-pink-400 mb-6">Luteal Liberty Project</h1>
-          <p className="text-xl text-white/90 max-w-2xl">
+          <h1 className="text-5xl font-bold text-white mb-6">Luteal Liberty Project</h1>
+          <p className="text-xl text-white max-w-2xl">
             {`Empowering young girls through reproductive and menstrual health education while addressing the challenges
             they face during their transition through puberty.`}
           </p>
         </div>
       </div>
-
-    
-      {/* <section className="py-16 bg-pink-200">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="bg-pink-50 rounded-xl p-6 text-center">
-              <div className="flex justify-center mb-4">
-                <Heart className="w-10 h-10 text-pink-500" />
-              </div>
-              <h3 className="text-2xl font-bold text-pink-600">{`100+`}</h3>
-              <p className="text-gray-600">Schools Reached</p>
-            </div>
-            <div className="bg-pink-50 rounded-xl p-6 text-center">
-              <div className="flex justify-center mb-4">
-                <Users className="w-10 h-10 text-pink-500" />
-              </div>
-              <h3 className="text-2xl font-bold text-pink-600">{`5,000+`}</h3>
-              <p className="text-gray-600">Girls Supported</p>
-            </div>
-            <div className="bg-pink-50 rounded-xl p-6 text-center">
-              <div className="flex justify-center mb-4">
-                <Book className="w-10 h-10 text-pink-500" />
-              </div>
-              <h3 className="text-2xl font-bold text-pink-600">{`200+`}</h3>
-              <p className="text-gray-600">Workshops Conducted</p>
-            </div>
-            <div className="bg-pink-50 rounded-xl p-6 text-center">
-              <div className="flex justify-center mb-4">
-                <Star className="w-10 h-10 text-pink-500" />
-              </div>
-              <h3 className="text-2xl font-bold text-pink-600">{`50+`}</h3>
-              <p className="text-gray-600">Partner Schools</p>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       {/* About Section with Video */}
       <section className="py-16 bg-pink-200">
@@ -174,14 +140,88 @@ export default function LutealLibertyPage() {
           </div>
         </div>
       </section>
+      <section className="py-20 bg-pink-200">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-bold mb-12 text-center text-pink-600">Our Impact</h2>
 
-      {/* Gallery Section */}
-      {/* <section className="py-16 bg-pink-200">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-8 text-center text-pink-600">Our Impact in Pictures</h2>
-          <ImageGallery images={projectImages} />
-        </div>
-      </section> */}
+            <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+              <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
+                <Image
+                  src="/Luteal/menstrual-calendar-concept_52683-46271.jpg"
+                  alt="Mandela Jersey Distribution"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-6 text-pink-600">Community Warmth</h3>
+                <p className="text-gray-700 mb-6">
+                  {`Our Mandela Jersey initiative has made a significant impact in providing warmth to communities during
+                  the cold winter months in South Africa. By distributing jerseys to those in need, we've helped address
+                  immediate physical needs while also promoting Mandela's legacy of compassion and service.`}
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-pink-600 mr-2">•</span>
+                    <span className="text-gray-700">Provided warmth to vulnerable community members</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-pink-600 mr-2">•</span>
+                    <span className="text-gray-700">Supported local manufacturing and job creation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-pink-600 mr-2">•</span>
+                    <span className="text-gray-700">
+                      Raised awareness about winter challenges in disadvantaged communities
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-pink-600 mr-2">•</span>
+                    <span className="text-gray-700">Promoted community solidarity and support</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-12 items-center mb-16 md:flex-row-reverse">
+              <div>
+                <h3 className="text-2xl font-bold mb-6 text-pink-600">{`Preserving Mandela's Legacy`}</h3>
+                <p className="text-gray-700 mb-6">
+                  {`Each jersey serves as a reminder of Nelson Mandela's legacy and the values he stood for. By featuring
+                  his image and promoting his ideals, we help keep his memory alive and inspire others to continue his
+                  work of equality, dignity, and compassion for all.`}
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-pink-600 mr-2">•</span>
+                    <span className="text-gray-700">{`Celebrated Mandela's vision and values`}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-pink-600 mr-2">•</span>
+                    <span className="text-gray-700">{`Educated younger generations about Mandela's impact`}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-pink-600 mr-2">•</span>
+                    <span className="text-gray-700">Inspired community service and volunteerism</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-pink-600 mr-2">•</span>
+                    <span className="text-gray-700">Promoted unity and reconciliation</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl order-first md:order-last">
+                <Image
+                  src="/Luteal/letual.webp"
+                  alt="Mandela Jersey"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        
     </div>
   )
 }

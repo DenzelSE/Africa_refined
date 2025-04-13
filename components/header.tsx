@@ -36,7 +36,7 @@ export default function Header() {
             <nav className="hidden md:flex items-center space-x-6">
               <NavLink href="/">HOME</NavLink>
               <NavLink href="/about">ABOUT</NavLink>
-              <NavLink href="/team">MEET THE TEAM</NavLink>
+              <NavLink href="/#team">MEET THE TEAM</NavLink>
               <NavLink href="/projects">OUR PROJECTS</NavLink>
               <NavLink href="/shop">SHOP</NavLink>
               <NavLink href="/gallery">GALLERY</NavLink>
@@ -71,7 +71,7 @@ export default function Header() {
               <MobileNavLink href="/about" onClick={toggleMenu}>
                 ABOUT
               </MobileNavLink>
-              <MobileNavLink href="/team" onClick={toggleMenu}>
+              <MobileNavLink href="/#team" onClick={toggleMenu}>
                 MEET THE TEAM
               </MobileNavLink>
               <MobileNavLink href="/projects" onClick={toggleMenu}>
