@@ -134,14 +134,14 @@ export default function Home() {
               title="Educational Workshop Success"
               date="April 10, 2025"
               excerpt="Our recent educational workshop on menstrual health reached over 200 young girls in local communities."
-              imageUrl="/carousel/WhatsApp Image 2024-12-09 at 07.59.03_2a7f773f.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
               link="/news/educational-workshop"
             />
             <NewsCard
               title="Mandela Month Preparations"
               date="March 25, 2025"
               excerpt="Preparations are underway for our annual Keeping Warm this Mandela Month initiative. Join us in making a difference."
-              imageUrl="/carousel/WhatsApp Image 2024-12-09 at 07.59.03_2a7f773f.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-17 at 12.06.22_69a56246.jpg"
               link="/news/mandela-month-preparations"
             />
             <NewsCard
