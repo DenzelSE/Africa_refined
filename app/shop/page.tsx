@@ -25,9 +25,9 @@ export default function ShopPage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <ProductCard title="Madiba Jersey" price="R500" imageUrl="/placeholder.svg?height=400&width=300" />
-            <ProductCard title="Madiba T-Shirt" price="R250" imageUrl="/placeholder.svg?height=400&width=300" />
-            <ProductCard title="Madiba T-Shirt" price="R250" imageUrl="/placeholder.svg?height=400&width=300" />
+            <ProductCard title="Madiba Jersey" price="R500" imageUrl="/carousel/WhatsApp Image 2024-12-17 at 05.58.08_da6e057e.jpg" />
+            <ProductCard title="Madiba T-Shirt" price="R250" imageUrl="/carousel/WhatsApp Image 2024-12-17 at 12.19.29_a349d8e0.jpg" />
+            <ProductCard title="Madiba T-Shirt" price="R250" imageUrl="/carousel/WhatsApp Image 2024-12-05 at 00.11.13_5d2c4a45.jpg" />
           </div>
 
           <div className="text-center mt-12">
