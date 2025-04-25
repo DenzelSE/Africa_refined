@@ -5,11 +5,12 @@ export default function Footer() {
   return (
     <footer className="relative text-white py-12">
       {/* Background Image */}
+      <div className="absolute inset-0 bg-amber-600 bg-opacity-85 z-0"></div>
       <div
         className="absolute inset-0 z-0"
         style={{
           backgroundImage:
-            "url('/footerbg.jpg')",
+            "url('/carousel/footerbg.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           opacity: 0.9,
@@ -17,7 +18,6 @@ export default function Footer() {
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-amber-900 bg-opacity-85 z-10"></div>
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-20">
