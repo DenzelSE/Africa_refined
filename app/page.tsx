@@ -11,10 +11,10 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative flex flex-col md:flex-row h-[80vh]">
         {/* Left side - Text and CTA */}
-        <div className="flex-1 flex items-center justify-center bg-[url('/carousel/bgpatterbs.jpg')] bg-amber-300 bg-blend-multiply bg-cover">
+        <div className="flex-1 flex items-center justify-center bg-[url('/carousel/Lutealbg.jpg')] bg-cover">
           <div className="px-8 py-12 md:py-0 max-w-xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">Be part of the vision.</h1>
-            <p className="text-xl md:text-2xl mb-8 text-white">Help us refine Africa, one initiative at a time.</p>
+            <p className="text-xl md:text-2xl mb-8 text-white">Help us Refine Africa, one initiative at a time.</p>
             <Button
               asChild
               size="lg"
@@ -28,7 +28,7 @@ export default function Home() {
         {/* Right side - Image */}
         <div className="flex-1 relative">
           <Image
-            src="/carousel/WhatsApp Image 2024-12-09 at 07.59.03_2a7f773f.jpg"
+            src="/Lbg.jpg"
             alt="African children celebrating"
             fill
             className="object-cover"
