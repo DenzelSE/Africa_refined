@@ -11,14 +11,14 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative flex flex-col md:flex-row h-[80vh]">
         {/* Left side - Text and CTA */}
-        <div className="flex-1 flex items-center justify-center bg-[url('/carousel/Lutealbg.jpg')] bg-cover">
+        <div className="flex-1 flex items-center justify-center bg-[url('/carousel/bgHDpattern.jpg')] bg-cover bg-amber-900">
           <div className="px-8 py-12 md:py-0 max-w-xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-blue-600">Be part of the vision.</h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-600">Help us Refine Africa, one initiative at a time.</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">Be part of the vision.</h1>
+            <p className="text-xl md:text-2xl mb-8 text-white">Help us Refine Africa, one initiative at a time.</p>
             <Button
               asChild
               size="lg"
-              className="border-2 border-blue-900 bg-transparent hover:bg-blue-100 hover:text-amber-800 text-blue-600 rounded-full px-8"
+              className="border-2 border-white bg-transparent hover:bg-white hover:text-amber-800 text-white rounded-full px-8"
             >
               <Link href="/donate">DONATE TODAY</Link>
             </Button>

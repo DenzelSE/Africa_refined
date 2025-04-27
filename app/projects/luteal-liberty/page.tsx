@@ -4,7 +4,8 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Award, Book, Calendar, Heart, Link, Star, Users } from "lucide-react"
 import Image from "next/image"
 import { useEffect, useRef } from "react"
-
+import "@/style/animations.css"
+import LutealCycleDiagram from "@/components/luteal-cycle-diagram"
 
 // Video component with autoplay and loop
 const VideoPlayer = () => {
@@ -36,7 +37,7 @@ export default function LutealLibertyPage() {
       <div className="relative min-h-[500px] overflow-hidden bg-gradient-to-b from-pink-400 to-pink-800">
         <div className="absolute inset-0 opacity-50">
           <Image
-            src="/carousel/WhatsApp Image 2024-12-09 at 07.59.03_2a7f773f.jpg"
+            src="/carousel/2019-06-06-00-50-32-197.jpg"
             alt="Luteal Liberty Banner"
             layout="fill"
             objectFit="cover"
@@ -140,10 +141,11 @@ export default function LutealLibertyPage() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-pink-200">
+      
+      <section className="py-1 bg-pink-200">
           <div className="container mx-auto px-6">
-            <h2 className="text-3xl font-bold mb-12 text-center text-pink-600">Our Impact</h2>
-
+              <LutealCycleDiagram />
+            
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
                 <Image
@@ -154,30 +156,28 @@ export default function LutealLibertyPage() {
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-6 text-pink-600">Community Warmth</h3>
+              <h2 className="text-3xl font-bold mb-4 text-pink-600">Our Impact</h2>
                 <p className="text-gray-700 mb-6">
-                  {`Our Mandela Jersey initiative has made a significant impact in providing warmth to communities during
-                  the cold winter months in South Africa. By distributing jerseys to those in need, we've helped address
-                  immediate physical needs while also promoting Mandela's legacy of compassion and service.`}
+                  {`Our Luteal Liberty Project has made a significant impact in empowering young girls through menstrual health education and support.`}
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-pink-600 mr-2">•</span>
-                    <span className="text-gray-700">Provided warmth to vulnerable community members</span>
+                    <span className="text-gray-700">Distributed over 500 menstrual hygiene kits to school-age girls in underserved communities</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-600 mr-2">•</span>
-                    <span className="text-gray-700">Supported local manufacturing and job creation</span>
+                    <span className="text-gray-700">Trained 150 local teachers and community leaders as menstrual health educators</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-600 mr-2">•</span>
                     <span className="text-gray-700">
-                      Raised awareness about winter challenges in disadvantaged communities
+                    Reduced school absenteeism by 63% among participating girls during menstruation
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-600 mr-2">•</span>
-                    <span className="text-gray-700">Promoted community solidarity and support</span>
+                    <span className="text-gray-700">Improved self-reported confidence and body awareness in 82% of program participants</span>
                   </li>
                 </ul>
               </div>
@@ -185,28 +185,30 @@ export default function LutealLibertyPage() {
 
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16 md:flex-row-reverse">
               <div>
-                <h3 className="text-2xl font-bold mb-6 text-pink-600">{`Preserving Mandela's Legacy`}</h3>
+                <h3 className="text-2xl font-bold mb-6 text-pink-600">SDG Alignment</h3>
                 <p className="text-gray-700 mb-6">
-                  {`Each jersey serves as a reminder of Nelson Mandela's legacy and the values he stood for. By featuring
-                  his image and promoting his ideals, we help keep his memory alive and inspire others to continue his
-                  work of equality, dignity, and compassion for all.`}
+                  {`The Luteal Liberty Project directly contributes to achieving these Sustainable Development Goals:`}
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-pink-600 mr-2">•</span>
-                    <span className="text-gray-700">{`Celebrated Mandela's vision and values`}</span>
+                    <span className="text-gray-700">{`SDG 3: Good Health and Well-being - Improving menstrual hygiene management and reproductive health knowledge`}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-600 mr-2">•</span>
-                    <span className="text-gray-700">{`Educated younger generations about Mandela's impact`}</span>
+                    <span className="text-gray-700">{`ESDG 4: Quality Education - Reducing period-related school absenteeism and providing comprehensive health education`}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-600 mr-2">•</span>
-                    <span className="text-gray-700">Inspired community service and volunteerism</span>
+                    <span className="text-gray-700">{`SDG 5: Gender Equality - Empowering girls to overcome stigma and manage their bodies with confidence and dignity`}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-600 mr-2">•</span>
-                    <span className="text-gray-700">Promoted unity and reconciliation</span>
+                    <span className="text-gray-700">{`SDG 6: Clean Water and Sanitation - Promoting proper hygiene practices and access to sanitation facilities`}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-pink-600 mr-2">•</span>
+                    <span className="text-gray-700">{`SDG 10: Reduced Inequalities - Ensuring marginalized girls have equal access to menstrual products and education`}</span>
                   </li>
                 </ul>
               </div>
