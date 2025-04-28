@@ -1,16 +1,46 @@
-import { createServerClient } from "@/utils/supabase/server"
-import { notFound } from "next/navigation"
 import Image from "next/image"
-import OrderForm from "../../../app/shop/order-form"
+import OrderForm from "@/components/shop/order-form"
 
-export default async function ProductPage({ params }: { params: { productId: string } }) {
-  const supabase = createServerClient()
+// Sample product data - in a real app, this would come from a CMS or API
+const products = [
+  {
+    id: "1",
+    name: "Madiba Jersey",
+    price: 500,
+    image_url: "/placeholder.svg?height=400&width=300",
+    description:
+      "Stay warm with our Madiba-inspired jersey. Made from high-quality materials with Mandela's iconic silhouette.",
+  },
+  {
+    id: "2",
+    name: "Madiba T-Shirt",
+    price: 250,
+    image_url: "/placeholder.svg?height=400&width=300",
+    description: "Comfortable cotton t-shirt featuring Nelson Mandela's portrait and inspirational quote.",
+  },
+  {
+    id: "3",
+    name: "Madiba Cap",
+    price: 150,
+    image_url: "/placeholder.svg?height=400&width=300",
+    description: "Stylish cap with embroidered Mandela silhouette. One size fits all.",
+  },
+]
 
-  // Fetch the product details
-  const { data: product, error } = await supabase.from("products").select("*").eq("id", params.productId).single()
+export default function ProductPage({ params }: { params: { productId: string } }) {
+  // Find the product by ID
+  const product = products.find((p) => p.id === params.productId)
 
-  if (error || !product) {
-    notFound()
+  // If product not found, show a message
+  if (!product) {
+    return (
+      <div className="min-h-screen py-12">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-3xl font-bold mb-4">Product Not Found</h1>
+          <p>The product you're looking for doesn't exist.</p>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -38,10 +68,21 @@ export default async function ProductPage({ params }: { params: { productId: str
             </div>
 
             {/* Order Form */}
-            <OrderForm product={product} />
+            <OrderForm
+              product={product}
+              onSuccess={() => (window.location.href = "/shop/confirmation")}
+              onCancel={() => (window.location.href = "/shop")}
+            />
           </div>
         </div>
       </div>
     </div>
   )
+}
+
+// Generate static paths for all products
+export function generateStaticParams() {
+  return products.map((product) => ({
+    productId: product.id,
+  }))
 }

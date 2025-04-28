@@ -27,13 +27,13 @@ export default function ProjectsPage() {
             <ProjectCard
               title="Nelson Mandela Jersey"
               link="/projects/nelson-mandela-jersey"
-              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.38.41_e90d02ae.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-05 at 00.11.13_5d2c4a45.jpg"
               color="blue"
             />
             <ProjectCard
               title="Moving Garden Project"
               link="/projects/moving-garden"
-              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.38.41_e90d02ae.jpg"
+              imageUrl="/MovingGreen.jpeg"
               color="green"
             />
           </div>

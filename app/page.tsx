@@ -46,7 +46,7 @@ export default function Home() {
               title="Luteal Liberty Project"
               description="The Luteal Liberty Project, founded in 2019, aims to empower young girls through reproductive and menstrual health education whilst addressing the challenges young women experience as they transition through puberty, offering support and resources to help them manage their menstrual and reproductive health more effectively."
               link="/projects/luteal-liberty"
-              imageUrl="/carousel/WhatsApp Image 2024-12-09 at 07.59.03_2a7f773f.jpg"
+              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.38.41_e90d02ae.jpg"
               color="pink"
             />
             <ProjectCard
@@ -60,7 +60,7 @@ export default function Home() {
               title="Moving Garden Project"
               description="The Moving Garden project is a multifaceted initiative focusing on Sustainable Agriculture. This initiative is the latest addition to Africa Refined that provides valuable educational opportunities for scholars and contributes to several Sustainable Development Goals (SDGs), particularly SDG 2, which aims to end hunger, achieve food security and improved nutrition, and promote sustainable agriculture by 2030."
               link="/projects/moving-garden"
-              imageUrl="/carousel/WhatsApp Image 2024-12-17 at 13.05.37_7791c768.jpg"
+              imageUrl="/MovingGreen.jpeg"
               color="green"
             />
           </div>
@@ -92,7 +92,7 @@ export default function Home() {
 
             <div className="flex flex-col items-center text-center border-2 border-amber-200 rounded-lg transition-all duration-300 hover:shadow-xl hover:border-amber-400 overflow-hidden">
               <div className="relative w-full h-100">
-                <Image src="/carousel/WhatsApp Image 2024-12-17 at 11.50.04_04eb359b.jpg" alt="Donate" fill className="object-cover" />
+                <Image src="/carousel/donate.jpg" alt="Donate" fill className="object-cover" />
               </div>
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-semibold mb-6">Donate Now</h3>

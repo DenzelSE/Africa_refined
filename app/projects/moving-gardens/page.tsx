@@ -18,7 +18,7 @@ export default function MovingGardenPage() {
           <div className="max-w-4xl mx-auto">
             <div className="relative h-64 w-full mb-8 rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=300&width=800"
+                src="/carousel/Mgreen.jpg"
                 alt="Moving Garden Project"
                 fill
                 className="object-cover"

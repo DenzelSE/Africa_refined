@@ -47,47 +47,6 @@ export default function SubscribePage() {
                 </div>
               </div>
             </div>
-
-            <div className="bg-amber-50 p-8 rounded-lg">
-              <h2 className="text-2xl font-bold mb-6">Subscribe to Our Newsletter</h2>
-              <form className="space-y-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name">Full Name</Label>
-                  <Input id="name" placeholder="John Doe" />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email Address</Label>
-                  <Input id="email" type="email" placeholder="john.doe@example.com" />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="interests">Areas of Interest</Label>
-                  <select
-                    id="interests"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                  >
-                    <option value="">Select your interests</option>
-                    <option value="all">All Projects</option>
-                    <option value="luteal-liberty">Luteal Liberty Project</option>
-                    <option value="nelson-mandela-jersey">Nelson Mandela Jersey Project</option>
-                    <option value="moving-garden">Moving Garden Project</option>
-                  </select>
-                </div>
-
-                <div className="flex items-start space-x-2">
-                  <input type="checkbox" id="consent" className="mt-1" />
-                  <Label htmlFor="consent" className="text-sm">
-                    I agree to receive newsletters and updates from Africa Refined. I understand that I can unsubscribe
-                    at any time.
-                  </Label>
-                </div>
-
-                <Button type="submit" className="w-full bg-amber-700 hover:bg-amber-800">
-                  SUBSCRIBE NOW
-                </Button>
-              </form>
-            </div>
           </div>
         </div>
       </section>

@@ -99,7 +99,7 @@ export const projects = [
         initiative is the latest addition to Africa Refined that provides valuable educational opportunities for
         scholars and contributes to several Sustainable Development Goals (SDGs), particularly SDG 2, which aims
         to end hunger, achieve food security and improved nutrition, and promote sustainable agriculture by 2030.`,
-      imageUrl: "/placeholder.svg?height=300&width=400",
+      imageUrl: "/carousel/Mgreen.jpg",
       color: "green",
       sdgs: [
         {

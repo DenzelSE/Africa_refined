@@ -59,7 +59,7 @@ export default function AboutPage() {
             <h2 className="text-4xl font-bold mb-12 text-center text-white">Our Mission, Vision & Values</h2>
 
             <div className="mb-12">
-              <h3 className="text-3xl font-bold mb-4 text-red-600">Our Mission</h3>
+              <h3 className="text-3xl font-bold mb-4 text-center text-white">Our Mission</h3>
               <p className="text-2xl text-white">
                 To drive sustainability, health, and empowerment within communities through impactful engagements that
                 create lasting positive change.
@@ -67,7 +67,7 @@ export default function AboutPage() {
             </div>
 
             <div className="mb-12">
-              <h3 className="text-3xl font-bold mb-4 text-red-600">Our Vision</h3>
+              <h3 className="text-3xl font-bold mb-4 text-center text-white">Our Vision</h3>
               <p className="text-2xl text-white">
                 To engender a community of knowledgeable individuals who empower one another in solidarity, creating
                 resilient and thriving communities across Africa.
@@ -75,41 +75,41 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold mb-4 text-red-600">Our Values</h3>
+              <h3 className="text-3xl font-bold mb-4 text-center text-white">Our Values</h3>
               <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                  <h4 className="text-2xl font-semibold mb-2 text-red-600">Integrity</h4>
-                  <p className="text-xl text-gray-700">
+                <div className="border-2 border-white p-6 rounded-lg shadow-md">
+                  <h4 className="text-2xl font-semibold mb-2 text-white">Integrity</h4>
+                  <p className="text-xl text-white">
                     We operate with honesty, transparency, and accountability in all our actions and decisions.
                   </p>
                 </div>
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                  <h4 className="text-2xl font-semibold mb-2 text-red-600">Empowerment</h4>
-                  <p className="text-xl text-gray-700">
+                <div className="border-2 border-white p-6 rounded-lg shadow-md">
+                  <h4 className="text-2xl font-semibold mb-2 text-white">Empowerment</h4>
+                  <p className="text-xl text-white">
                     We believe in equipping individuals with knowledge, skills, and resources to improve their lives.
                   </p>
                 </div>
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                  <h4 className="text-2xl font-semibold mb-2 text-red-600">Sustainability</h4>
-                  <p className="text-xl text-gray-700">
+                <div className="border-2 border-white p-6 rounded-lg shadow-md">
+                  <h4 className="text-2xl font-semibold mb-2 text-white">Sustainability</h4>
+                  <p className="text-xl text-white">
                     We commit to practices that meet present needs without compromising future generations.
                   </p>
                 </div>
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                  <h4 className="text-2xl font-semibold mb-2 text-red-600">Collaboration</h4>
-                  <p className="text-xl text-gray-700">
+                <div className="border-2 border-white p-6 rounded-lg shadow-md">
+                  <h4 className="text-2xl font-semibold mb-2 text-white">Collaboration</h4>
+                  <p className="text-xl text-white">
                     We foster partnerships and community involvement to achieve greater collective impact.
                   </p>
                 </div>
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                  <h4 className="text-2xl font-semibold mb-2 text-red-600">Innovation</h4>
-                  <p className="text-xl text-gray-700">
+                <div className="border-2 border-white p-6 rounded-lg shadow-md">
+                  <h4 className="text-2xl font-semibold mb-2 text-white">Innovation</h4>
+                  <p className="text-xl text-white">
                     We embrace creative solutions and new approaches to address complex community challenges.
                   </p>
                 </div>
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                  <h4 className="text-2xl font-semibold mb-2 text-red-600">Respect</h4>
-                  <p className="text-xl text-gray-700">
+                <div className="border-2 border-white p-6 rounded-lg shadow-md">
+                  <h4 className="text-2xl font-semibold mb-2 text-white">Respect</h4>
+                  <p className="text-xl text-white">
                     We honor the dignity, culture, and rights of all individuals and communities we serve.
                   </p>
                 </div>
@@ -167,7 +167,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section> */}
-      <MeetTheTeam/>
     </div>
   )
 }
