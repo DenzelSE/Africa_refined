@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react"
 import { projects } from "../../config/projects"
 import { notFound } from "next/navigation"
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   return projects.map((project) => ({
     id: project.id,
   }))
