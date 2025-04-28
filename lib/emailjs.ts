@@ -7,8 +7,17 @@ export const initEmailJS = () => {
   emailjs.init("BadZ2OkPXYtF4dydz")
 }
 
+export type FormData = {
+  name?: string;
+  firstName?: string;
+  lastName?: string;
+  email: string;
+  subject: string;
+  message: string;
+}
+
 // Contact form email
-export const sendContactEmail = async (formData: any) => {
+export const sendContactEmail = async (formData: FormData) => {
 //   const service_id = process.env.SERVICE_ID as string;
 //   const temp_id = process.env.CONTACT_TEMPLATE_ID as string;
 //   console.log("service ID: ", service_id)
