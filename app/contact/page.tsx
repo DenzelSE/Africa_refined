@@ -64,6 +64,7 @@ export default function ContactPage() {
         success: false,
         message: "There was an error sending your message. Please try again later.",
       })
+      console.log(error);
     } finally {
       setIsSubmitting(false)
     }

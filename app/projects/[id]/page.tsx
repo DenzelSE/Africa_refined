@@ -91,7 +91,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
               <blockquote
                 className={`border-l-4 ${colorClasses.border} pl-4 italic my-8 text-lg ${colorClasses.light} p-6 rounded-r-lg`}
               >
-                "{project.quote}" {project.quoteAuthor && <span>- {project.quoteAuthor}</span>}
+                {project.quote} {project.quoteAuthor && <span>- {project.quoteAuthor}</span>}
               </blockquote>
             )}
 
