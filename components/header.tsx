@@ -40,7 +40,6 @@ export default function Header() {
               <NavLink href="/projects">OUR PROJECTS</NavLink>
               <NavLink href="/shop">SHOP</NavLink>
               <NavLink href="/gallery">GALLERY</NavLink>
-              <NavLink href="/news">NEWS</NavLink>
               <NavLink href="/contact">CONTACT US</NavLink>
             </nav>
           </div>
@@ -82,9 +81,6 @@ export default function Header() {
               </MobileNavLink>
               <MobileNavLink href="/gallery" onClick={toggleMenu}>
                 GALLERY
-              </MobileNavLink>
-              <MobileNavLink href="/news" onClick={toggleMenu}>
-                NEWS
               </MobileNavLink>
               <MobileNavLink href="/contact" onClick={toggleMenu}>
                 CONTACT US

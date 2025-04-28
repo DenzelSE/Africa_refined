@@ -120,48 +120,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* News and Events */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4">NEWS & EVENTS</h2>
-          <p className="text-center text-gray-600 mb-12">
-            Stay updated with our latest initiatives and upcoming events
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <NewsCard
-              title="Educational Workshop Success"
-              date="April 10, 2025"
-              excerpt="Our recent educational workshop on menstrual health reached over 200 young girls in local communities."
-              imageUrl="/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
-              link="/news/educational-workshop"
-            />
-            <NewsCard
-              title="Mandela Month Preparations"
-              date="March 25, 2025"
-              excerpt="Preparations are underway for our annual Keeping Warm this Mandela Month initiative. Join us in making a difference."
-              imageUrl="/carousel/WhatsApp Image 2024-12-17 at 12.06.22_69a56246.jpg"
-              link="/news/mandela-month-preparations"
-            />
-            <NewsCard
-              title="Moving Garden Expansion"
-              date="March 15, 2025"
-              excerpt="We're excited to announce the expansion of our Moving Garden project to three new schools in the region."
-              imageUrl="/carousel/WhatsApp Image 2024-12-09 at 07.59.03_2a7f773f.jpg"
-              link="/news/moving-garden-expansion"
-            />
-          </div>
-
-          <div className="text-center mt-10">
-            <Button asChild variant="outline" className="border-amber-700 text-amber-700 hover:bg-amber-50">
-              <Link href="/news" className="flex items-center">
-                VIEW ALL NEWS & EVENTS <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
       <MeetTheTeam/>
     </div>
   )
