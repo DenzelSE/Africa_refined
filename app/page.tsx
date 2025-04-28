@@ -202,34 +202,3 @@ function ProjectCard({
   )
 }
 
-function NewsCard({
-  title,
-  date,
-  excerpt,
-  imageUrl,
-  link,
-}: {
-  title: string
-  date: string
-  excerpt: string
-  imageUrl: string
-  link: string
-}) {
-  return (
-    <div className="flex flex-col overflow-hidden rounded-lg shadow-md">
-      <div className="relative h-48">
-        <Image src={imageUrl || "/placeholder.svg"} alt={title} fill className="object-cover" />
-      </div>
-      <div className="p-6 flex-grow flex flex-col">
-        <p className="text-sm text-amber-700 mb-2">{date}</p>
-        <h3 className="text-xl font-bold mb-3">{title}</h3>
-        <p className="text-gray-600 mb-4 flex-grow">{excerpt}</p>
-        <Button asChild variant="link" className="text-amber-800 p-0 justify-start">
-          <Link href={link} className="flex items-center">
-            READ MORE <ArrowRight className="ml-2 h-4 w-4"/>
-          </Link>
-        </Button>
-      </div>
-    </div>
-  )
-}
