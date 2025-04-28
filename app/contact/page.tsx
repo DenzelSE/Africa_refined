@@ -85,8 +85,8 @@ export default function ContactPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
               <p className="text-lg mb-8">
-                We'd love to hear from you. Whether you have a question about our projects, donations, or anything else,
-                our team is ready to answer all your questions.
+                {`We'd love to hear from you. Whether you have a question about our projects, donations, or anything else,
+                our team is ready to answer all your questions.`}
               </p>
 
               <div className="space-y-4">

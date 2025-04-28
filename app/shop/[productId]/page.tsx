@@ -37,7 +37,7 @@ export default function ProductPage({ params }: { params: { productId: string } 
       <div className="min-h-screen py-12">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-3xl font-bold mb-4">Product Not Found</h1>
-          <p>The product you're looking for doesn't exist.</p>
+          <p>{`The product you're looking for doesn't exist.`}</p>
         </div>
       </div>
     )

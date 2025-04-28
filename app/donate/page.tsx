@@ -1,8 +1,9 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { ArrowRight, Copy, Mail, Phone } from "lucide-react"
+import Link from "next/link"
 
 export default function DonatePage() {
   return (
@@ -39,114 +40,124 @@ export default function DonatePage() {
                 </li>
               </ul>
 
-              <p className="text-lg">
+              <p className="text-lg mb-8">
                 Every contribution, no matter how small, makes a significant impact in our efforts to refine health,
                 sustainability, and empowerment across Africa.
               </p>
+
+              <div className="bg-amber-50 p-6 rounded-lg border border-amber-200 mb-8">
+                <h3 className="text-xl font-bold mb-4">How Your Donation Helps</h3>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <ArrowRight className="h-5 w-5 text-amber-700 mr-2 mt-1 flex-shrink-0" />
+                    <span>R100 provides menstrual products for a girl for 3 months</span>
+                  </li>
+                  <li className="flex items-start">
+                    <ArrowRight className="h-5 w-5 text-amber-700 mr-2 mt-1 flex-shrink-0" />
+                    <span>R250 provides a warm jersey for a child during winter</span>
+                  </li>
+                  <li className="flex items-start">
+                    <ArrowRight className="h-5 w-5 text-amber-700 mr-2 mt-1 flex-shrink-0" />
+                    <span>R500 helps establish a small community garden</span>
+                  </li>
+                  <li className="flex items-start">
+                    <ArrowRight className="h-5 w-5 text-amber-700 mr-2 mt-1 flex-shrink-0" />
+                    <span>R1000 sponsors a health education workshop for 20 students</span>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>Donation Form</CardTitle>
-                <CardDescription>Choose an amount or enter a custom donation.</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form className="space-y-6">
+            <div>
+              <Card className="shadow-lg border-amber-200">
+                <CardHeader className="bg-amber-50">
+                  <CardTitle className="text-2xl">Banking Details</CardTitle>
+                  <CardDescription>Make a direct deposit or electronic transfer</CardDescription>
+                </CardHeader>
+                <CardContent className="pt-6 space-y-6">
                   <div className="space-y-4">
-                    <Label>Select an amount</Label>
-                    <RadioGroup defaultValue="100">
-                      <div className="grid grid-cols-3 gap-4">
-                        <div>
-                          <RadioGroupItem value="100" id="r100" className="peer sr-only" />
-                          <Label
-                            htmlFor="r100"
-                            className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-amber-700 [&:has([data-state=checked])]:border-amber-700"
+                    <div>
+                      <h3 className="font-semibold text-lg mb-1">Account Information</h3>
+                      <div className="grid grid-cols-3 gap-2 text-sm">
+                        <div className="font-medium">Account Name:</div>
+                        <div className="col-span-2">Africa Refined NPO</div>
+
+                        <div className="font-medium">Bank:</div>
+                        <div className="col-span-2">First National Bank (FNB)</div>
+
+                        <div className="font-medium">Account Number:</div>
+                        <div className="col-span-2 flex items-center">
+                          62123456789
+                          <button
+                            className="ml-2 text-amber-700 hover:text-amber-900"
+                            onClick={() => {
+                              navigator.clipboard.writeText("62123456789")
+                              alert("Account number copied to clipboard!")
+                            }}
                           >
-                            R100
-                          </Label>
+                            <Copy className="h-4 w-4" />
+                          </button>
                         </div>
-                        <div>
-                          <RadioGroupItem value="250" id="r250" className="peer sr-only" />
-                          <Label
-                            htmlFor="r250"
-                            className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-amber-700 [&:has([data-state=checked])]:border-amber-700"
-                          >
-                            R250
-                          </Label>
+
+                        <div className="font-medium">Branch Code:</div>
+                        <div className="col-span-2">250655</div>
+
+                        <div className="font-medium">Reference:</div>
+                        <div className="col-span-2">Your Name + "Donation"</div>
+
+                        <div className="font-medium">Swift Code:</div>
+                        <div className="col-span-2">FIRNZAJJ (for international transfers)</div>
+                      </div>
+                    </div>
+
+                    <div className="border-t border-gray-200 pt-4">
+                      <h3 className="font-semibold text-lg mb-3">Contact Information</h3>
+                      <div className="space-y-2">
+                        <div className="flex items-center">
+                          <Mail className="h-5 w-5 text-amber-700 mr-2" />
+                          <span>donations@africarefined.org</span>
                         </div>
-                        <div>
-                          <RadioGroupItem value="500" id="r500" className="peer sr-only" />
-                          <Label
-                            htmlFor="r500"
-                            className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-amber-700 [&:has([data-state=checked])]:border-amber-700"
-                          >
-                            R500
-                          </Label>
-                        </div>
-                        <div>
-                          <RadioGroupItem value="1000" id="r1000" className="peer sr-only" />
-                          <Label
-                            htmlFor="r1000"
-                            className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-amber-700 [&:has([data-state=checked])]:border-amber-700"
-                          >
-                            R1000
-                          </Label>
-                        </div>
-                        <div>
-                          <RadioGroupItem value="2500" id="r2500" className="peer sr-only" />
-                          <Label
-                            htmlFor="r2500"
-                            className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-amber-700 [&:has([data-state=checked])]:border-amber-700"
-                          >
-                            R2500
-                          </Label>
-                        </div>
-                        <div>
-                          <RadioGroupItem value="custom" id="custom" className="peer sr-only" />
-                          <Label
-                            htmlFor="custom"
-                            className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-amber-700 [&:has([data-state=checked])]:border-amber-700"
-                          >
-                            Custom
-                          </Label>
+                        <div className="flex items-center">
+                          <Phone className="h-5 w-5 text-amber-700 mr-2" />
+                          <span>+27 123 456 789</span>
                         </div>
                       </div>
-                    </RadioGroup>
-                  </div>
+                    </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="custom-amount">Custom Amount (ZAR)</Label>
-                    <Input id="custom-amount" type="number" placeholder="Enter amount" />
-                  </div>
+                    <div className="border-t border-gray-200 pt-4">
+                      <h3 className="font-semibold text-lg mb-3">Tax Benefits</h3>
+                      <p className="text-sm text-gray-600">
+                        Africa Refined is a registered non-profit organization. All donations are tax-deductible. Please
+                        email us for a tax certificate after making your donation.
+                      </p>
+                    </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="project">Allocate to Project (Optional)</Label>
-                    <select
-                      id="project"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    >
-                      <option value="">General Fund</option>
-                      <option value="luteal-liberty">Luteal Liberty Project</option>
-                      <option value="nelson-mandela-jersey">Nelson Mandela Jersey Project</option>
-                      <option value="moving-garden">Moving Garden Project</option>
-                    </select>
+                    <div className="border-t border-gray-200 pt-4">
+                      <h3 className="font-semibold text-lg mb-3">Other Ways to Help</h3>
+                      <div className="flex flex-col space-y-3">
+                        <Button asChild variant="outline" className="border-amber-700 text-amber-700 hover:bg-amber-50">
+                          <Link href="/volunteer">Volunteer Your Time</Link>
+                        </Button>
+                        <Button asChild variant="outline" className="border-amber-700 text-amber-700 hover:bg-amber-50">
+                          <Link href="/shop">Support Our Shop</Link>
+                        </Button>
+                      </div>
+                    </div>
                   </div>
+                </CardContent>
+              </Card>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="name">Full Name</Label>
-                    <Input id="name" placeholder="John Doe" />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
-                    <Input id="email" type="email" placeholder="john.doe@example.com" />
-                  </div>
-                </form>
-              </CardContent>
-              <CardFooter>
-                <Button className="w-full bg-amber-700 hover:bg-amber-800">Proceed to Payment</Button>
-              </CardFooter>
-            </Card>
+              <div className="mt-8 bg-amber-50 p-6 rounded-lg border border-amber-200">
+                <h3 className="text-xl font-bold mb-3">Need Assistance?</h3>
+                <p className="mb-4">
+                  If you have any questions about making a donation or would like to discuss other ways to support our
+                  work, please don't hesitate to contact us.
+                </p>
+                <Button asChild className="w-full bg-amber-700 hover:bg-amber-800">
+                  <Link href="/contact">Contact Us</Link>
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>

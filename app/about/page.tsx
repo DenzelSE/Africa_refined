@@ -1,4 +1,4 @@
-import MeetTheTeam from "@/components/MeetTheTeam"
+
 import Image from "next/image"
 
 export default function AboutPage() {

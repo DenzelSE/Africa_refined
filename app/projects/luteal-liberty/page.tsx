@@ -1,7 +1,4 @@
 "use client"
-
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Award, Book, Calendar, Heart, Link, Star, Users } from "lucide-react"
 import Image from "next/image"
 import { useEffect, useRef } from "react"
 import "@/style/animations.css"
