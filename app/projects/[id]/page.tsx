@@ -99,7 +99,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
               <div className={`${colorClasses.light} p-8 rounded-lg my-8 border-l-4 ${colorClasses.border}`}>
                 <h2 className={`text-2xl font-bold mb-4 ${colorClasses.text}`}>Sustainable Development Goals</h2>
                 <p className="text-lg mb-4">
-                  The {project.title} contributes to several Sustainable Development Goals (SDGs), particularly:
+                  The {project.title} contributes to several Sustainable Development Goals (SDGs), particularly
                 </p>
                 <ul className="list-disc pl-6 text-lg space-y-2">
                   {project.sdgs.map((sdg, index) => (
@@ -112,7 +112,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
             )}
 
             <h2 className={`text-2xl font-bold mt-12 mb-6 ${colorClasses.text}`}>
-              The key focus areas of the project include:
+              {`The key focus areas of the project include:`}
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               {project.focusAreas.map((area, index) => (

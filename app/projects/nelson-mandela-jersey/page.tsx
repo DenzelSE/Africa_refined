@@ -110,12 +110,3 @@ export default function NelsonMandelaJerseyPage() {
     </div>
   )
 }
-
-function FocusArea({ title, description }: { title: string; description: string }) {
-  return (
-    <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-600">
-      <h3 className="text-xl font-bold mb-3 text-blue-700">{title}</h3>
-      <p className="text-gray-700">{description}</p>
-    </div>
-  )
-}

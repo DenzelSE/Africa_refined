@@ -21,21 +21,21 @@ export default function DonatePage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Make a Difference</h2>
               <p className="text-lg mb-6">
-                Your donation helps us continue our work in empowering communities across South Africa through our
-                various initiatives:
+                {`Your donation helps us continue our work in empowering communities across South Africa through our
+                various initiatives:`}
               </p>
 
               <ul className="list-disc pl-6 text-lg space-y-4 mb-8">
                 <li>
-                  <strong>Luteal Liberty Project:</strong> Empowering young girls through reproductive and menstrual
+                  <strong>{`Luteal Liberty Project:`}</strong> Empowering young girls through reproductive and menstrual
                   health education.
                 </li>
                 <li>
-                  <strong>Nelson Mandela Jersey Project:</strong> Providing warm clothing to disadvantaged communities
+                  <strong>{`Nelson Mandela Jersey Project:`}</strong> Providing warm clothing to disadvantaged communities
                   during winter months.
                 </li>
                 <li>
-                  <strong>Moving Garden Project:</strong> Promoting sustainable agriculture and food security in local
+                  <strong>{`Moving Garden Project:`}</strong> Promoting sustainable agriculture and food security in local
                   communities.
                 </li>
               </ul>
@@ -79,13 +79,13 @@ export default function DonatePage() {
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Account Information</h3>
                       <div className="grid grid-cols-3 gap-2 text-sm">
-                        <div className="font-medium">Account Name:</div>
+                        <div className="font-medium">{`Account Name:`}</div>
                         <div className="col-span-2">Africa Refined NPO</div>
 
-                        <div className="font-medium">Bank:</div>
+                        <div className="font-medium">{`Bank:`}</div>
                         <div className="col-span-2">First National Bank (FNB)</div>
 
-                        <div className="font-medium">Account Number:</div>
+                        <div className="font-medium">{`Account Number:`}</div>
                         <div className="col-span-2 flex items-center">
                           62123456789
                           <button
@@ -102,10 +102,10 @@ export default function DonatePage() {
                         <div className="font-medium">Branch Code:</div>
                         <div className="col-span-2">250655</div>
 
-                        <div className="font-medium">Reference:</div>
-                        <div className="col-span-2">Your Name + "Donation"</div>
+                        <div className="font-medium">{`Reference:`}</div>
+                        <div className="col-span-2">{`Your Name + "Donation"`}</div>
 
-                        <div className="font-medium">Swift Code:</div>
+                        <div className="font-medium">{`Swift Code:`}</div>
                         <div className="col-span-2">FIRNZAJJ (for international transfers)</div>
                       </div>
                     </div>
@@ -127,8 +127,8 @@ export default function DonatePage() {
                     <div className="border-t border-gray-200 pt-4">
                       <h3 className="font-semibold text-lg mb-3">Tax Benefits</h3>
                       <p className="text-sm text-gray-600">
-                        Africa Refined is a registered non-profit organization. All donations are tax-deductible. Please
-                        email us for a tax certificate after making your donation.
+                        {`Africa Refined is a registered non-profit organization. All donations are tax-deductible. Please
+                        email us for a tax certificate after making your donation.`}
                       </p>
                     </div>
 
@@ -150,8 +150,8 @@ export default function DonatePage() {
               <div className="mt-8 bg-amber-50 p-6 rounded-lg border border-amber-200">
                 <h3 className="text-xl font-bold mb-3">Need Assistance?</h3>
                 <p className="mb-4">
-                  If you have any questions about making a donation or would like to discuss other ways to support our
-                  work, please don't hesitate to contact us.
+                  {`If you have any questions about making a donation or would like to discuss other ways to support our
+                  work, please don't hesitate to contact us.`}
                 </p>
                 <Button asChild className="w-full bg-amber-700 hover:bg-amber-800">
                   <Link href="/contact">Contact Us</Link>
