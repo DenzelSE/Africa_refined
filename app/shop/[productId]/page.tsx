@@ -1,7 +1,6 @@
 import Image from "next/image"
 import OrderForm from "@/components/shop/order-form"
 
-// Sample product data - in a real app, this would come from a CMS or API
 const products = [
   {
     id: "1",
@@ -27,11 +26,16 @@ const products = [
   },
 ]
 
-export default function ProductPage({ params }: { params: { productId: string } }) {
-  // Find the product by ID
+// ✅ Properly typed props
+interface ProductPageProps {
+  params: {
+    productId: string
+  }
+}
+
+export default function ProductPage({ params }: ProductPageProps) {
   const product = products.find((p) => p.id === params.productId)
 
-  // If product not found, show a message
   if (!product) {
     return (
       <div className="min-h-screen py-12">
@@ -80,8 +84,8 @@ export default function ProductPage({ params }: { params: { productId: string } 
   )
 }
 
-// Generate static paths for all products
-export function generateStaticParams() {
+// ✅ generateStaticParams must return a Promise
+export async function generateStaticParams() {
   return products.map((product) => ({
     productId: product.id,
   }))
