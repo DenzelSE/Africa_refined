@@ -1,5 +1,4 @@
 import Image from "next/image"
-import OrderForm from "@/components/shop/order-form"
 import { Link } from "lucide-react"
 
 const products = [
