@@ -13,7 +13,7 @@ export default function Footer() {
             "url('/carousel/footerbg.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          opacity: 0.9,
+          opacity: 0.3,
         }}
       />
 
