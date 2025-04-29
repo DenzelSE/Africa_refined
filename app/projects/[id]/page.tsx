@@ -10,10 +10,12 @@ export async function generateStaticParams() {
     id: project.id,
   }))
 }
+
 interface ProjectPageProps {
   params: {
     id: string
   }
+  searchParams?: { [key: string]: string | string[] | undefined }
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
