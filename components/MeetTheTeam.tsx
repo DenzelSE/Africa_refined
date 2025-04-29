@@ -5,8 +5,8 @@ import { Linkedin, Twitter, Globe } from "lucide-react"
 const teamMembers = [
   {
     name: "Nonhlanhla Nkosi",
-    role: "Founder & CEO",
-    image: "/carousel/TeamPic.jpg",
+    role: "Chairperson",
+    image: "/Team/Chairperson.jpeg",
     socials: {
       linkedin: "https://www.linkedin.com/in/janedoe",
       twitter: "https://twitter.com/janedoe",
@@ -15,8 +15,8 @@ const teamMembers = [
   },
   {
     name: "Nonhlanhla Nkosi",
-    role: "Community Outreach Director",
-    image: "/carousel/TeamPic.jpg",
+    role: "Deputy Chainperson",
+    image: "/Team/Group 1(1).png",
     socials: {
       linkedin: "https://www.linkedin.com/in/johnsmith",
       twitter: "https://twitter.com/johnsmith",
@@ -24,8 +24,8 @@ const teamMembers = [
   },
   {
     name: "Nonhlanhla Nkosi",
-    role: "Community Outreach Director",
-    image: "/carousel/TeamPic.jpg",
+    role: "Secretary",
+    image: "/Team/Secretary.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/johnsmith",
       twitter: "https://twitter.com/johnsmith",
@@ -33,8 +33,8 @@ const teamMembers = [
   },
   {
     name: "Nonhlanhla Nkosi",
-    role: "Community Outreach Director",
-    image: "/carousel/TeamPic.jpg",
+    role: "Treasurer",
+    image: "/Team/Treasurer1.jpeg",
     socials: {
       linkedin: "https://www.linkedin.com/in/johnsmith",
       twitter: "https://twitter.com/johnsmith",
