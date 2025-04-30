@@ -49,7 +49,7 @@ export default function Header() {
             <Button
               asChild
               variant="outline"
-              className="mr-4 border-amber-700 text-amber-700 hover:bg-amber-50 hidden md:inline-flex"
+              className="mr-4 border-amber-700 bg-white text-amber-700 hover:bg-amber-50 hidden md:inline-flex"
             >
               <Link href="/donate">DONATE TODAY</Link>
             </Button>
@@ -85,7 +85,7 @@ export default function Header() {
               <MobileNavLink href="/contact" onClick={toggleMenu}>
                 CONTACT US
               </MobileNavLink>
-              <Button asChild variant="outline" className="border-amber-700 text-amber-700 hover:bg-amber-50 w-full">
+              <Button asChild variant="outline" className="border-amber-700 bg-white text-amber-700 hover:bg-amber-50 w-full">
                 <Link href="/donate" onClick={toggleMenu}>
                   DONATE TODAY
                 </Link>

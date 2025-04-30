@@ -40,7 +40,7 @@ export default function Home() {
       {/* Areas of Work */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">AREAS OF WORK</h2>
+          <h2 className="text-3xl text-black font-bold text-center mb-12">AREAS OF WORK</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <ProjectCard
               title="Luteal Liberty Project"
@@ -69,7 +69,7 @@ export default function Home() {
 
       <section className="py-16 bg-amber-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">GET INVOLVED</h2>
+          <h2 className="text-3xl text-black font-bold text-center mb-12">GET INVOLVED</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-8xl h-[400px] mx-auto">
             <div className="flex flex-col items-center text-center border-1 border-amber-200 rounded-lg transition-all duration-300 hover:shadow-xl hover:border-amber-400 overflow-hidden">
               <div className="relative overflow-hidden  w-full h-100">
@@ -81,7 +81,7 @@ export default function Home() {
                 />
               </div>
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-semibold mb-6">View Collection</h3>
+                <h3 className="text-xl text-black font-semibold mb-6">View Collection</h3>
                 <div className="mt-auto">
                   <Button asChild className="bg-amber-700 hover:bg-amber-800 w-full md:w-auto">
                     <Link href="/shop">SHOP NOW</Link>
@@ -95,7 +95,7 @@ export default function Home() {
                 <Image src="/carousel/donate.jpg" alt="Donate" fill className="object-cover" />
               </div>
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-semibold mb-6">Donate Now</h3>
+                <h3 className="text-xl text-black font-semibold mb-6">Donate Now</h3>
                 <div className="mt-auto">
                   <Button asChild className="bg-amber-700 hover:bg-amber-800 w-full md:w-auto">
                     <Link href="/donate">DONATE NOW</Link>
@@ -109,7 +109,7 @@ export default function Home() {
                 <Image src="/carousel/WhatsApp Image 2024-12-17 at 12.06.22_69a56246.jpg" alt="Subscribe" fill className="object-cover" />
               </div>
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-semibold mb-6">Subscribe to our social media platforms</h3>
+                <h3 className="text-xl text-black font-semibold mb-6">Subscribe to our social media platforms</h3>
                 <div className="mt-auto">
                   <Button asChild className="bg-amber-700 hover:bg-amber-800 w-full md:w-auto">
                     <Link href="/subscribe">SUBSCRIBE NOW</Link>
@@ -191,7 +191,7 @@ function ProjectCard({
         <h3 className="text-xl font-bold text-white mb-4">{title}</h3>
         <p className="text-white mb-6 line-clamp-6">{description}</p>
         <div className="mt-auto">
-          <Button asChild variant="outline" className={`rounded-lg ${colorClasses.button}`}>
+          <Button asChild variant="outline" className={`rounded-lg bg-white ${colorClasses.button}`}>
             <Link href={link} className="flex text-black items-center">
               LEARN MORE <ArrowRight className="ml-2 h-4 w-4" />
             </Link>

@@ -54,7 +54,7 @@ const MeetTheTeam = () => {
                 <Image src={member.image || "/placeholder.svg"} alt={member.name} layout="fill" objectFit="cover" />
               </div>
               <div className="p-4">
-                <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
+                <h3 className="text-xl text-black font-semibold mb-1">{member.name}</h3>
                 <p className="text-gray-600 mb-3">{member.role}</p>
                 <div className="flex space-x-2">
                   {member.socials.linkedin && (

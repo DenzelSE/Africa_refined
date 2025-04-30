@@ -3,7 +3,7 @@
 import type * as React from "react"
 import { createContext, useContext, useEffect, useState } from "react"
 
-type Theme = "dark" | "light" | "system"
+type Theme = "light" | "system"
 
 type ThemeProviderProps = {
   children: React.ReactNode
@@ -58,7 +58,7 @@ export function ThemeProvider({
     }
 
     if (theme === "system" && enableSystem) {
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+      const systemTheme = window.matchMedia("(prefers-color-scheme: light)").matches ? "dark" : "light"
       root.setAttribute(attribute, systemTheme)
       return
     }
