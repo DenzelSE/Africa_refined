@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react"
 
 export default function NelsonMandelaJerseyPage() {
   return (
-    <div className="min-h-screen">
+    <div className="bg-white min-h-screen">
       <section className="bg-blue-600 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Nelson Mandela Jersey Project</h1>
@@ -82,7 +82,7 @@ export default function NelsonMandelaJerseyPage() {
                 </div>
               </div>
 
-            <div className="bg-blue-50 p-8 rounded-lg my-12">
+            <div className="bg-blue-100 text-black p-8 rounded-lg my-12">
               <h2 className="text-2xl font-bold mb-4 text-blue-700">KEEPING WARM THIS MANDELA MONTH</h2>
               <p className="text-lg mb-4">
                 {`The 'Keeping Warm this Mandela Month' features a clothing collection of Madiba Inspired designs and
