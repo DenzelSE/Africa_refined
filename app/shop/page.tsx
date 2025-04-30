@@ -6,25 +6,25 @@ export default function ShopPage() {
     {
       id: "1",
       name: "Madiba Jersey",
-      price: 400,
+      price: 500,
       image_url: "/carousel/WhatsApp Image 2024-12-17 at 12.19.29_a349d8e0.jpg",
       description:
         "Stay warm with our Madiba-inspired jersey. Made from high-quality materials with Mandela's iconic silhouette.",
     },
-    {
-      id: "2",
-      name: "Madiba T-Shirt",
-      price: 250,
-      image_url: "/carousel/mandelaJ.jpg",
-      description: "Comfortable cotton t-shirt featuring Nelson Mandela's portrait and inspirational quote.",
-    },
-    {
-      id: "3",
-      name: "Madiba Sweater",
-      price: 150,
-      image_url: "/carousel/WhatsApp Image 2024-12-05 at 00.11.14_9828787d.jpg",
-      description: "Stylish cap with embroidered Mandela silhouette. One size fits all.",
-    },
+    // {
+    //   id: "2",
+    //   name: "Madiba T-Shirt",
+    //   price: 250,
+    //   image_url: "/carousel/mandelaJ.jpg",
+    //   description: "Comfortable cotton t-shirt featuring Nelson Mandela's portrait and inspirational quote.",
+    // },
+    // {
+    //   id: "3",
+    //   name: "Madiba Sweater",
+    //   price: 300,
+    //   image_url: "/carousel/WhatsApp Image 2024-12-05 at 00.11.14_9828787d.jpg",
+    //   description: "Stylish cap with embroidered Mandela silhouette. One size fits all.",
+    // },
   ]
 
   return (

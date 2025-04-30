@@ -115,7 +115,7 @@ export default function DonatePage() {
                       <div className="space-y-2">
                         <div className="flex items-center">
                           <Mail className="h-5 w-5 text-amber-700 mr-2" />
-                          <span>donations@africarefined.org</span>
+                          <span>africarefinednpo@gmail.com</span>
                         </div>
                         <div className="flex items-center">
                           <Phone className="h-5 w-5 text-amber-700 mr-2" />

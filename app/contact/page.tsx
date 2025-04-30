@@ -92,7 +92,7 @@ export default function ContactPage() {
               <div className="space-y-4">
                 <div>
                   <h3 className="text-xl text-black font-semibold mb-2">Email</h3>
-                  <p className="text-lg text-black ">info@africarefined.org</p>
+                  <p className="text-lg text-black ">africarefinednpo@gmail.com</p>
                 </div>
                 <div>
                   <h3 className="text-xl text-black font-semibold mb-2">Phone</h3>

@@ -75,7 +75,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact</h3>
             <p className="mb-2">Noordgesig, 1804, Johannesburg, Gauteng, South Africa</p>
-            <p className="mb-2">Email: info@africarefined.org</p>
+            <p className="mb-2">Email: africarefinednpo@gmail.com</p>
             <p className="mb-4">Phone: +27 64 618 6783</p>
             <Link
               href="/donate"
