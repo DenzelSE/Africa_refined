@@ -71,7 +71,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="bg-amber-50 min-h-screen">
       <section className="bg-amber-800 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">CONTACT US</h1>
@@ -83,24 +83,24 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
-              <p className="text-lg mb-8">
+              <h2 className="text-3xl text-black font-bold mb-6">Get in Touch</h2>
+              <p className="text-lg text-black mb-8">
                 {`We'd love to hear from you. Whether you have a question about our projects, donations, or anything else,
                 our team is ready to answer all your questions.`}
               </p>
 
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Email</h3>
-                  <p className="text-lg">info@africarefined.org</p>
+                  <h3 className="text-xl text-black font-semibold mb-2">Email</h3>
+                  <p className="text-lg text-black ">info@africarefined.org</p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Phone</h3>
-                  <p className="text-lg">+27 64 618 6783</p>
+                  <h3 className="text-xl text-black font-semibold mb-2">Phone</h3>
+                  <p className="text-lg text-black">+27 64 618 6783</p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Address</h3>
-                  <p className="text-lg">
+                  <h3 className="text-xl text-black font-semibold mb-2">Address</h3>
+                  <p className="text-lg text-black">
                     Noordgesig, 1804
                     <br />
                     Johannesburg, Gauteng
@@ -111,7 +111,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <Card>
+            <Card className="text-black">
               <CardHeader>
                 <CardTitle>Send us a Message</CardTitle>
                 <CardDescription>
@@ -138,6 +138,7 @@ export default function ContactPage() {
                         value={formData.firstName}
                         onChange={handleChange}
                         required
+                        className="bg-white"
                       />
                     </div>
                     <div className="space-y-2">
@@ -149,6 +150,7 @@ export default function ContactPage() {
                         value={formData.lastName}
                         onChange={handleChange}
                         required
+                        className="bg-white"
                       />
                     </div>
                   </div>
@@ -163,6 +165,7 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={handleChange}
                       required
+                      className="bg-white"
                     />
                   </div>
 
@@ -175,6 +178,7 @@ export default function ContactPage() {
                       value={formData.subject}
                       onChange={handleChange}
                       required
+                      className="bg-white"
                     />
                   </div>
 
@@ -184,7 +188,7 @@ export default function ContactPage() {
                       id="message"
                       name="message"
                       placeholder="Your message here..."
-                      className="min-h-[150px]"
+                      className="min-h-[150px] bg-white"
                       value={formData.message}
                       onChange={handleChange}
                       required

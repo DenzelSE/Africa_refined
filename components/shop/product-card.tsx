@@ -24,7 +24,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
   return (
     <>
-      <Card className="overflow-hidden h-full flex flex-col">
+      <Card className="overflow-hidden bg-white h-full flex flex-col">
         <div className="relative h-64 w-full">
           <Image
             src={product.image_url || "/placeholder.svg?height=400&width=300"}
@@ -34,10 +34,10 @@ export function ProductCard({ product }: ProductCardProps) {
           />
         </div>
         <CardHeader>
-          <CardTitle className="text-center">{product.name}</CardTitle>
+          <CardTitle className="text-center text-black ">{product.name}</CardTitle>
         </CardHeader>
         <CardContent className="flex-grow">
-          <p className="text-center text-2xl font-bold mb-4">R{product.price.toFixed(2)}</p>
+          <p className="text-center text-2xl text-black font-bold mb-4">R{product.price.toFixed(2)}</p>
           {product.description && <p className="text-gray-600 text-sm">{product.description}</p>}
         </CardContent>
         <CardFooter className="flex justify-center">

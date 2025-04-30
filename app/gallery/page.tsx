@@ -143,9 +143,9 @@ export default function GalleryPage() {
       </section>
 
       {/* School Gallery Tabs */}
-      <section className="py-16">
+      <section className="py-16 bg-amber-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8">School Galleries</h2>
+          <h2 className="text-3xl text-black font-bold mb-8">School Galleries</h2>
 
           {/* Mobile School Selector (visible on small screens) */}
           <MobileSchoolSelector
@@ -156,10 +156,10 @@ export default function GalleryPage() {
             }}
           />
 
-          <Tabs defaultValue="all" className="w-full">
+          <Tabs defaultValue="all" className="text-black w-full">
             <div className="hidden md:block mb-8 overflow-x-auto">
               <TabsList className="flex w-full justify-start p-1 mb-2">
-                <TabsTrigger value="all" className="px-4 py-2">
+                <TabsTrigger value="all" className="px-4 text-black py-2">
                   All Schools
                 </TabsTrigger>
                 {schoolGalleries.map((school) => (
@@ -192,7 +192,7 @@ export default function GalleryPage() {
             {schoolGalleries.map((school) => (
               <TabsContent key={school.id} value={school.id} className="mt-0">
                 <div className="mb-6">
-                  <h3 className="text-xl font-semibold mb-2">{school.name}</h3>
+                  <h3 className="text-xl text-black font-semibold mb-2">{school.name}</h3>
                   <p className="text-gray-600">{school.description}</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

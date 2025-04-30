@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function ProjectsPage() {
   return (
-    <div className="min-h-screen">
+    <div className="bg-amber-50">
       <section className="bg-amber-800 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">OUR PROJECTS</h1>
@@ -11,13 +11,13 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-30 bg-amber-50">
         {/* <div className="container mx-auto px-4 text-center mb-12">
           <p className="text-xl">Africa Refined is home to several impactful community driven projects</p>
         </div> */}
 
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="container bg-amber-50 mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
             <ProjectCard
               title="Luteal Liberty Project"
               link="/projects/luteal-liberty"

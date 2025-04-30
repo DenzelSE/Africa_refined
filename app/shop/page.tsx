@@ -36,11 +36,11 @@ export default function ShopPage() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16 bg-amber-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">SHOP OUR COLLECTION</h2>
-            <p className="text-lg">
+            <h2 className="text-3xl text-black font-bold mb-4">SHOP OUR COLLECTION</h2>
+            <p className="text-lg text-black ">
               {`By purchasing these products, you are contributing to the work and fundraiser of Africa Refined.`}
               <br />
               {`Seize the moment and join us in keeping the Madiba legacy alive.`}
@@ -55,10 +55,10 @@ export default function ShopPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-amber-50">
+      <section className="py-16 bg-amber-100">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-8">KEEPING WARM THIS MANDELA MONTH</h2>
-          <p className="text-lg max-w-3xl mx-auto mb-8">
+          <h2 className="text-3xl font-bold text-black mb-8">KEEPING WARM THIS MANDELA MONTH</h2>
+          <p className="text-lg text-black max-w-3xl mx-auto mb-8">
             {`The 'Keeping Warm this Mandela Month' features a clothing collection of Madiba Inspired designs and
             products, supporting the initiative.`}
           </p>
