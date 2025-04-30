@@ -8,13 +8,12 @@ const teamMembers = [
     role: "Chairperson",
     image: "/Team/Chairperson.jpeg",
     socials: {
-      linkedin: "https://www.linkedin.com/in/janedoe",
-      twitter: "https://twitter.com/janedoe",
+      linkedin: "https://www.linkedin.com/in/nonhlanhla-nkosi-216901149/",
       website: "https://janedoe.com",
     },
   },
   {
-    name: "Nonhlanhla Nkosi",
+    name: "Morakeng Calvin Makgaila",
     role: "Deputy Chainperson",
     image: "/Team/Group 1(1).png",
     socials: {
@@ -23,16 +22,16 @@ const teamMembers = [
     },
   },
   {
-    name: "Nonhlanhla Nkosi",
+    name: "Patracia Nevondwe",
     role: "Secretary",
     image: "/Team/Secretary.png",
     socials: {
-      linkedin: "https://www.linkedin.com/in/johnsmith",
+      linkedin: "https://www.linkedin.com/in/patracia-nevondwe-33b69bb7",
       twitter: "https://twitter.com/johnsmith",
     },
   },
   {
-    name: "Nonhlanhla Nkosi",
+    name: "Sanele Makhaya",
     role: "Treasurer",
     image: "/Team/Treasurer1.jpeg",
     socials: {

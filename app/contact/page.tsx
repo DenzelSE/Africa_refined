@@ -101,9 +101,9 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Address</h3>
                   <p className="text-lg">
-                    123 Main Street
+                    Noordgesig, 1804
                     <br />
-                    Johannesburg
+                    Johannesburg, Gauteng
                     <br />
                     South Africa
                   </p>
