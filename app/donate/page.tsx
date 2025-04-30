@@ -15,7 +15,7 @@ export default function DonatePage() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="bg-amber-50 text-black py-16">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <div>
@@ -45,7 +45,7 @@ export default function DonatePage() {
                 sustainability, and empowerment across Africa.
               </p>
 
-              <div className="bg-amber-50 p-6 rounded-lg border border-amber-200 mb-8">
+              <div className="bg-white p-6 rounded-lg border border-amber-200 mb-8">
                 <h3 className="text-xl font-bold mb-4">How Your Donation Helps</h3>
                 <ul className="space-y-2">
                   <li className="flex items-start">
@@ -70,11 +70,11 @@ export default function DonatePage() {
 
             <div>
               <Card className="shadow-lg border-amber-200">
-                <CardHeader className="bg-amber-50">
+                <CardHeader className="bg-white">
                   <CardTitle className="text-2xl">Banking Details</CardTitle>
                   <CardDescription>Make a direct deposit or electronic transfer</CardDescription>
                 </CardHeader>
-                <CardContent className="pt-6 space-y-6">
+                <CardContent className="pt-6 bg-white space-y-6">
                   <div className="space-y-4">
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Account Information</h3>
@@ -135,10 +135,7 @@ export default function DonatePage() {
                     <div className="border-t border-gray-200 pt-4">
                       <h3 className="font-semibold text-lg mb-3">Other Ways to Help</h3>
                       <div className="flex flex-col space-y-3">
-                        <Button asChild variant="outline" className="border-amber-700 text-amber-700 hover:bg-amber-50">
-                          <Link href="/volunteer">Volunteer Your Time</Link>
-                        </Button>
-                        <Button asChild variant="outline" className="border-amber-700 text-amber-700 hover:bg-amber-50">
+                        <Button asChild variant="outline" className="border-amber-700 border-4 bg-white text-amber-700 hover:bg-amber-50">
                           <Link href="/shop">Support Our Shop</Link>
                         </Button>
                       </div>
@@ -147,7 +144,7 @@ export default function DonatePage() {
                 </CardContent>
               </Card>
 
-              <div className="mt-8 bg-amber-50 p-6 rounded-lg border border-amber-200">
+              <div className="mt-8 bg-white p-6 rounded-lg border border-amber-200">
                 <h3 className="text-xl font-bold mb-3">Need Assistance?</h3>
                 <p className="mb-4">
                   {`If you have any questions about making a donation or would like to discuss other ways to support our
