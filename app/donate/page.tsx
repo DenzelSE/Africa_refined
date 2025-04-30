@@ -80,14 +80,14 @@ export default function DonatePage() {
                       <h3 className="font-semibold text-lg mb-1">Account Information</h3>
                       <div className="grid grid-cols-3 gap-2 text-sm">
                         <div className="font-medium">{`Account Name:`}</div>
-                        <div className="col-span-2">Africa Refined NPO</div>
+                        <div className="col-span-2">MS NONHLANHLA NKOSI</div>
 
                         <div className="font-medium">{`Bank:`}</div>
-                        <div className="col-span-2">First National Bank (FNB)</div>
+                        <div className="col-span-2">Capitec Bank </div>
 
                         <div className="font-medium">{`Account Number:`}</div>
                         <div className="col-span-2 flex items-center">
-                          62123456789
+                        1558011003
                           <button
                             className="ml-2 text-amber-700 hover:text-amber-900"
                             onClick={() => {
@@ -100,13 +100,13 @@ export default function DonatePage() {
                         </div>
 
                         <div className="font-medium">Branch Code:</div>
-                        <div className="col-span-2">250655</div>
+                        <div className="col-span-2">470010</div>
 
                         <div className="font-medium">{`Reference:`}</div>
                         <div className="col-span-2">{`Your Name + "Donation"`}</div>
 
-                        <div className="font-medium">{`Swift Code:`}</div>
-                        <div className="col-span-2">FIRNZAJJ (for international transfers)</div>
+                        {/* <div className="font-medium">{`Swift Code:`}</div>
+                        <div className="col-span-2">FIRNZAJJ (for international transfers)</div> */}
                       </div>
                     </div>
 
@@ -119,7 +119,7 @@ export default function DonatePage() {
                         </div>
                         <div className="flex items-center">
                           <Phone className="h-5 w-5 text-amber-700 mr-2" />
-                          <span>+27 123 456 789</span>
+                          <span>+27 64 618 6783</span>
                         </div>
                       </div>
                     </div>

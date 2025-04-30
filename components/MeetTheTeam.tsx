@@ -31,7 +31,7 @@ const teamMembers = [
     },
   },
   {
-    name: "Sanele Makhaya",
+    name: "Sanele Makhaye",
     role: "Treasurer",
     image: "/Team/Treasurer1.jpeg",
     socials: {
