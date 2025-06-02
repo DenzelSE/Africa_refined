@@ -135,7 +135,7 @@ export default function GalleryPage() {
       {/* Featured Images Carousel */}
       <section className="py-12 bg-gray-100">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8">Featured Images</h2>
+          <h2 className="text-3xl text-black font-bold mb-8">Featured Images</h2>
           <div className="h-[400px] md:h-[500px]">
             <ImageCarousel images={featuredImages} />
           </div>

@@ -108,7 +108,7 @@ export default function OrderForm({ product, onSuccess, onCancel }: OrderFormPro
   }
 
   return (
-    <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+    <form ref={formRef} onSubmit={handleSubmit} className="space-y-6 ">
       {formSuccess ? (
         <div className="bg-green-50 p-6 rounded-lg text-center">
           <CheckCircle className="h-12 w-12 text-green-500 mx-auto mb-4" />
@@ -118,14 +118,15 @@ export default function OrderForm({ product, onSuccess, onCancel }: OrderFormPro
       ) : (
         <>
           {/* Size Selection */}
-          <div className="space-y-2">
+          <div className="space-y-2 text-black">
             <Label htmlFor="size">Size</Label>
             <select
               id="size"
+              
               name="size"
               value={formData.size}
               onChange={handleChange}
-              className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+              className="flex h-10 w-full rounded-md border border-input bg-gray-100 px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
             >
               {SIZES.map((size) => (
                 <option key={size} value={size}>
@@ -136,9 +137,10 @@ export default function OrderForm({ product, onSuccess, onCancel }: OrderFormPro
           </div>
 
           {/* Quantity */}
-          <div className="space-y-2">
+          <div className="space-y-2 text-black">
             <Label htmlFor="quantity">Quantity</Label>
             <Input
+              className="bg-gray-100"
               id="quantity"
               name="quantity"
               type="number"
@@ -150,47 +152,47 @@ export default function OrderForm({ product, onSuccess, onCancel }: OrderFormPro
           </div>
 
           <div className="pt-6 border-t border-gray-200">
-            <h3 className="text-lg font-semibold mb-4">Your Information</h3>
+            <h3 className="text-lg text-black font-semibold mb-4">Your Information</h3>
 
             {/* Full Name */}
-            <div className="space-y-2">
-              <Label htmlFor="fullName">Full Name</Label>
-              <Input id="fullName" name="fullName" value={formData.fullName} onChange={handleChange} required />
+            <div className="space-y-2 text-black">
+              <Label htmlFor="fullName text-black ">Full Name</Label>
+              <Input className="bg-gray-100" id="fullName" name="fullName" value={formData.fullName} onChange={handleChange} required />
             </div>
 
             {/* Email */}
-            <div className="space-y-2 mt-4">
+            <div className="space-y-2 text-black mt-4">
               <Label htmlFor="email">Email Address (for order confirmation)</Label>
-              <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required />
+              <Input className="bg-gray-100" id="email" name="email" type="email" value={formData.email} onChange={handleChange} required />
             </div>
 
             {/* Phone */}
-            <div className="space-y-2 mt-4">
+            <div className="space-y-2 text-black mt-4">
               <Label htmlFor="phone">Phone Number</Label>
-              <Input id="phone" name="phone" value={formData.phone} onChange={handleChange} required />
+              <Input className="bg-gray-100" id="phone" name="phone" value={formData.phone} onChange={handleChange} required />
             </div>
 
             {/* Address */}
-            <div className="space-y-2 mt-4">
+            <div className="space-y-2 text-black mt-4">
               <Label htmlFor="address">Delivery Address</Label>
-              <Input id="address" name="address" value={formData.address} onChange={handleChange} required />
+              <Input className="bg-gray-100" id="address" name="address" value={formData.address} onChange={handleChange} required />
             </div>
 
             {/* City */}
-            <div className="space-y-2 mt-4">
+            <div className="space-y-2 text-black mt-4">
               <Label htmlFor="city">City</Label>
-              <Input id="city" name="city" value={formData.city} onChange={handleChange} required />
+              <Input className="bg-gray-100" id="city" name="city" value={formData.city} onChange={handleChange} required />
             </div>
 
             {/* Postal Code */}
-            <div className="space-y-2 mt-4">
+            <div className="space-y-2 text-black mt-4">
               <Label htmlFor="postalCode">Postal Code</Label>
-              <Input id="postalCode" name="postalCode" value={formData.postalCode} onChange={handleChange} required />
+              <Input className="bg-gray-100" id="postalCode" name="postalCode" value={formData.postalCode} onChange={handleChange} required />
             </div>
           </div>
 
           {/* Order Summary */}
-          <div className="bg-gray-50 p-4 rounded-lg">
+          <div className="bg-gray-50 p-4 rounded-lg text-black ">
             <h3 className="text-lg font-semibold mb-2">Order Summary</h3>
             <div className="flex justify-between mb-2">
               <span>

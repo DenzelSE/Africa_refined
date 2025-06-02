@@ -30,7 +30,7 @@ export function MobileSchoolSelector({ schools, activeSchool, onSchoolChange }: 
         <DropdownMenuContent className="w-full">
           <DropdownMenuItem onClick={() => onSchoolChange("all")}>All Schools</DropdownMenuItem>
           {schools.map((school) => (
-            <DropdownMenuItem key={school.id} onClick={() => onSchoolChange(school.id)}>
+            <DropdownMenuItem key={school.id} onClick={() => onSchoolChange(school.id) }>
               {school.name}
             </DropdownMenuItem>
           ))}
